@@ -26,8 +26,7 @@
     @dfn{@(math U)-logoses} is defined to be
     the smallest full subcategory of
     @(math (LexCocomp U V))
-    containing @(math (Type U))
-    and closed under @(math U)-small colimits,
+    spanned by the @(math U)-compact objects,
     where @(math V) is some universe
     strictly greater than @(math U).
     Note that the choice of @(math V) does not matter.

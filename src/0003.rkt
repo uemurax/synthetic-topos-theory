@@ -20,7 +20,8 @@
     and let @(math V) be a universe
     strictly greater than @(math U).
     We define @(math (LexCocomp U V)) to be the
-    subcategory of the category of @(math V)-small categories
+    locally full
+    subcategory of the @math{2}-category of @(math V)-small categories
     whose objects are the
     @(math V)-small lex @(math U)-cocomplete categories
     and morphisms are the

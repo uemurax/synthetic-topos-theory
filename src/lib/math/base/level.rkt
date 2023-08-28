@@ -5,6 +5,7 @@
 (provide (all-defined-out))
 
 (define-levels
+  unary
   $
   ->
   :

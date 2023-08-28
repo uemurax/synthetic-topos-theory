@@ -6,4 +6,5 @@
     @%{Taichi Uemura}
   ]
   #:title @%{Synthetic topos theory}
+  (include-part "0000.rkt")
 ]

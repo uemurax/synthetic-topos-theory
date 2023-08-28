@@ -7,4 +7,7 @@
   ]
   #:title @%{Synthetic topos theory}
   (include-part "0000.rkt")
+  #:back @list[
+    (include-part "term-index.rkt")
+  ]
 ]

@@ -1,6 +1,7 @@
 #lang morg
 
 (require "lib/article/definition.rkt"
+         "lib/index/notation.rkt"
          morg/math
          "lib/math/lex-cocomp.rkt")
 
@@ -9,6 +10,11 @@
 
 @definition[
   #:id (current-id)
+  #:indexes @list[
+    @n-index[#:key "LexCocomp"]{
+      @(math (LexCocomp U V))
+    }
+  ]
   @paragraph{
     Let @(math U) be a universe
     and let @(math V) be a universe

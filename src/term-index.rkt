@@ -3,5 +3,5 @@
 @section[
   #:id (current-id)
   #:title @%{Index}
-  @(print-index)
+  (print-index)
 ]

@@ -9,5 +9,6 @@
   (include-part "0000.rkt")
   #:back @list[
     (include-part "term-index.rkt")
+    (include-part "notation-index.rkt")
   ]
 ]

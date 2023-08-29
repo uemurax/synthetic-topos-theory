@@ -1,12 +1,27 @@
 #lang at-exp typed/racket
 
-(require morg/math"base/const.rkt"
+(require morg/math
+         (prefix-in tex: morg/math/tex)
+         (prefix-in tex: "base/tex.rkt")
+         "base/const.rkt"
          "base/apply.rkt")
 
 (provide Topos
+         object-classifier
+         object-classifier-pt
+         object-classifier-pr
          Sh)
 
 (define (Topos [U : MathTeX+Like])
   (@const{Topos} . $ . U))
 
 (define Sh @const{Sh})
+
+(define object-classifier
+  @tex:mathbb{A})
+
+(define object-classifier-pt
+  (object-classifier . _ . tex:bullet))
+
+(define object-classifier-pr
+  @const{p})

@@ -8,7 +8,7 @@
          "lib/math/functor.rkt"
          "lib/math/product.rkt"
          "lib/math/etale.rkt"
-         "lib/math/base/apply.rkt")
+         "lib/math/function.rkt")
 
 (define C "C")
 (define x "x")

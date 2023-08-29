@@ -3,7 +3,11 @@
 (require morg/math
          (prefix-in l: "level.rkt"))
 
-(provide |,|)
+(provide |,|
+         |,w|)
 
 (define |,|
   (monoid #:level |l:,| "" ","))
+
+(define |,w|
+  (monoid #:level |l:,w| "" ","))

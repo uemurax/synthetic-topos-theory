@@ -9,15 +9,19 @@
 
 (provide opposite
          slice
+         coslice
          comp
          morphism
          is-morphism
+         is-object*
          is-object)
 
 (define opposite
   (sup-op #:level l:unary @const{op}))
 
 (define is-object ::)
+
+(define is-object* ::*)
 
 (define morphism ->)
 
@@ -28,6 +32,9 @@
 
 (define slice
   (binary #:level l:binary "/"))
+
+(define coslice
+  (binary #:level l:binary "\\"))
 
 (define id @const{id})
 

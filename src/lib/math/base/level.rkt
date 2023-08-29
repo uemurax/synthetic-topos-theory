@@ -9,6 +9,7 @@
   $
   *
   binary
+  relation
   /->
   ->
   :

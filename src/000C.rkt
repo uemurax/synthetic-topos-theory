@@ -24,7 +24,7 @@
     Let @(math C) be a category
     that has finite limits
     and let @(math (x . is-object . C)) be an object.
-    The pair @(math (tuple (pullback x) (generic-elem x)))
+    Then the pair @(math (tuple (pullback x) (generic-elem x)))
     has the following universal property:
     For any category @(math D) that has finite limits,
     the functor

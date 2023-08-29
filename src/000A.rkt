@@ -5,4 +5,5 @@
   #:title @%{Étale morphisms}
   (include-part "000B.rkt")
   (include-part "000C.rkt")
+  (include-part "000D.rkt")
 ]

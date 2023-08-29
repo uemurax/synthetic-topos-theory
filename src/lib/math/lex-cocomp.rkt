@@ -2,14 +2,29 @@
 
 (require morg/math
          "base/const.rkt"
-         "base/apply.rkt")
+         "base/apply.rkt"
+         "base/free.rkt")
 
 (provide LexCocomp
+         free-lex-cocomp-pt
+         generic-object
          lex-cocomp-functor)
 
+(define sym @const{LexCocomp})
+
 (define (LexCocomp [U : MathTeX+Like] [V : MathTeX+Like])
-  (@const{LexCocomp} . $* . U V))
+  (sym . $* . U V))
 
 (define ((lex-cocomp-functor [U : MathTeX+Like])
          [C : MathTeX+Like] [D : MathTeX+Like])
-  ((@const{LexCocomp} . _ . U) . $* . C D))
+  ((sym . _ . U) . $* . C D))
+
+(define ((free-lex-cocomp [U : MathTeX+Like])
+         . [a : MathTeX+Like *])
+  ((group (free . apply . a)) . _ . (sym . _ . U)))
+
+(define generic-object
+  @const{w})
+
+(define (free-lex-cocomp-pt [U : MathTeX+Like])
+  ((free-lex-cocomp U) generic-object))

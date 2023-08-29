@@ -7,6 +7,8 @@
 (define-levels
   unary
   $
+  *
+  binary
   ->
   :
   |,|)

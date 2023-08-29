@@ -3,6 +3,7 @@
 (require morg/math
          (prefix-in tex: morg/math/tex)
          (prefix-in tex: "base/tex.rkt")
+         "base/star.rkt"
          "base/const.rkt"
          "base/apply.rkt")
 
@@ -10,6 +11,7 @@
          object-classifier
          object-classifier-pt
          object-classifier-pr
+         inverse-image
          Sh)
 
 (define (Topos [U : MathTeX+Like])
@@ -25,3 +27,5 @@
 
 (define object-classifier-pr
   @const{p})
+
+(define inverse-image ^*)

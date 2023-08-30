@@ -12,6 +12,7 @@
   (include-part "000X.rkt")
   (include-part "0010.rkt")
   (include-part "000I.rkt")
+  (include-part "0011.rkt")
   (include-part "000V.rkt")
   (include-part "000K.rkt")
   (include-part "000Z.rkt")

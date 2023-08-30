@@ -14,7 +14,7 @@
   #:id (current-id)
   #:indexes @list[
     @index[#:key "etale morphism"]{
-      étale morphism
+      étale morphism of toposes
     }
   ]
   @paragraph{

@@ -6,7 +6,8 @@
          "base/apply.rkt")
 
 (provide /->
-         $)
+         $
+         $*)
 
 (define /->
   (binary #:level l:/-> tex:mapsto

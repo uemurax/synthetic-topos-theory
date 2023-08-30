@@ -12,6 +12,7 @@
          coslice
          comp
          morphism
+         Hom
          is-morphism
          is-object*
          is-object)
@@ -40,3 +41,6 @@
 
 (define comp
   (monoid #:level l:binary id tex:circ))
+
+(define (Hom [C : MathTeX+Like])
+  (@const{Hom} . _ . C))

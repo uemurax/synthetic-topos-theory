@@ -4,9 +4,12 @@
          "base/member.rkt"
          "base/arrow.rkt")
 
-(provide is-functor)
+(provide is-functor
+         functor)
+
+(define functor ->)
 
 (define (is-functor [F : MathTeX+Like]
                     [C : MathTeX+Like]
                     [D : MathTeX+Like])
-  (F . :: . (C . -> . D)))
+  (F . :: . (C . functor . D)))

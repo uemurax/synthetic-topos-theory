@@ -12,6 +12,7 @@
          object-classifier-pt
          object-classifier-pr
          inverse-image
+         Etale
          Sh)
 
 (define (Topos [U : MathTeX+Like])
@@ -29,3 +30,6 @@
   @const{p})
 
 (define inverse-image ^*)
+
+(define (Etale [X : MathTeX+Like])
+  (@const{Etale} . $ . X))

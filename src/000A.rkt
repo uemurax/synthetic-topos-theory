@@ -27,4 +27,5 @@
   (include-part "000T.rkt")
   (include-part "000U.rkt")
   (include-part "000W.rkt")
+  (include-part "0012.rkt")
 ]

@@ -4,7 +4,6 @@
          morg/math
          "lib/math/category.rkt"
          "lib/math/lex-cocomp.rkt"
-         "lib/math/function.rkt"
          "lib/math/pullback.rkt"
          "lib/math/functor.rkt")
 
@@ -31,7 +30,7 @@
     in @(math (LexCocomp U V)) is
     @dfn{étale} if
     it is in the image of the functor
-    @(math ((x . /-> . (pullback x))
+    @(math ((etale-embed C)
             . is-functor .
             (opposite C)
             ((LexCocomp U V) . coslice . C))).

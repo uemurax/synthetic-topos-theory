@@ -8,6 +8,7 @@
 (provide LexCocomp
          free-lex-cocomp-pt
          generic-object
+         etale-embed
          lex-cocomp-functor)
 
 (define sym @const{LexCocomp})
@@ -28,3 +29,6 @@
 
 (define (free-lex-cocomp-pt [U : MathTeX+Like])
   ((free-lex-cocomp U) generic-object))
+
+(define (etale-embed [C : MathTeX+Like])
+  (@const{E} . _ . C))

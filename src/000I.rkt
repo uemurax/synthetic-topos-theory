@@ -25,12 +25,10 @@
     and let @(math C) be a @(math V)-small
     lex @(math U)-cocomplete category.
     The functor
-    @disp{
-      @(math ((x . /-> . (pullback x))
-              . is-functor .
-              (opposite C)
-              ((LexCocomp U V) . coslice . C)))
-    }
+    @(math ((etale-embed C)
+            . is-functor .
+            (opposite C)
+            ((LexCocomp U V) . coslice . C)))
     is fully faithful.
   }
   #:proof @proof[

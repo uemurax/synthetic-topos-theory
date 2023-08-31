@@ -27,7 +27,7 @@
             (opposite (Topos1 U))
             V))
     is a @dfn{sheaf} if
-    it takes @(math U)-small étale colimits in @(math (Topos1 U))
+    it takes étale colimits in @(math (Topos1 U))
     to limits in @(math V).
   }
 ]

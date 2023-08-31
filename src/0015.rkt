@@ -8,4 +8,5 @@
 @section[
   #:id (current-id)
   #:title @%{Sheaves on @(math (Topos U))}
+  (include-part "0016.rkt")
 ]

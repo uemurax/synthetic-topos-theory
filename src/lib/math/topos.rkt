@@ -8,6 +8,7 @@
          "base/apply.rkt")
 
 (provide Topos
+         Topos1
          object-classifier
          object-classifier-pt
          object-classifier-pr
@@ -15,8 +16,13 @@
          Etale
          Sh)
 
+(define sym @const{Topos})
+
 (define (Topos [U : MathTeX+Like])
-  (@const{Topos} . $ . U))
+  (sym . $ . U))
+
+(define (Topos1 [U : MathTeX+Like])
+  ((sym . ^ . "(1)") . $ . U))
 
 (define Sh @const{Sh})
 

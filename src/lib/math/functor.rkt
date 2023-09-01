@@ -1,10 +1,13 @@
-#lang typed/racket
+#lang at-exp typed/racket
 
 (require morg/math
          "base/member.rkt"
-         "base/arrow.rkt")
+         "base/arrow.rkt"
+         "base/apply.rkt"
+         "base/const.rkt")
 
 (provide is-functor
+         Functor
          functor)
 
 (define functor ->)
@@ -13,3 +16,6 @@
                     [C : MathTeX+Like]
                     [D : MathTeX+Like])
   (F . :: . (C . functor . D)))
+
+(define (Functor [C : MathTeX+Like] [D : MathTeX+Like])
+  (@const{Fun} . $* . C D))

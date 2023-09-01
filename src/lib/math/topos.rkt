@@ -14,6 +14,7 @@
          object-classifier-pr
          inverse-image
          Etale
+         ShTopos
          Sh)
 
 (define sym @const{Topos})
@@ -39,3 +40,6 @@
 
 (define (Etale [X : MathTeX+Like])
   (@const{Etale} . $ . X))
+
+(define (ShTopos [U : MathTeX+Like] [V : MathTeX+Like])
+  (Sh . $* . (Topos1 U) V))

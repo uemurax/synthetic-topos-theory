@@ -10,4 +10,5 @@
   #:title @%{Sheaves on @(math (Topos U))}
   (include-part "0016.rkt")
   (include-part "0019.rkt")
+  (include-part "001A.rkt")
 ]

@@ -3,6 +3,7 @@
 (require "lib/article/definition.rkt"
          morg/math
          "lib/math/topos.rkt"
+         "lib/math/logos.rkt"
          "lib/math/functor.rkt")
 
 (define U "U")
@@ -15,6 +16,9 @@
   #:indexes @list[
     @index[#:key "etale colimit"]{
       étale colimit
+    }
+    @index[#:key "etale limit"]{
+      étale limit
     }
   ]
   @paragraph{
@@ -30,5 +34,8 @@
     the colimit of @(math X) exists.
     We call colimits obtained in this way
     @dfn{étale colimits}.
+    Limits in @(math (Logos U))
+    that are étale colimits in @(math (Topos U))
+    are called @dfn{étale limits}.
   }
 ]

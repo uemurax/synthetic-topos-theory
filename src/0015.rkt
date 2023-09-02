@@ -17,4 +17,5 @@
   (include-part "001E.rkt")
   (include-part "001F.rkt")
   (include-part "001G.rkt")
+  (include-part "001H.rkt")
 ]

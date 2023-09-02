@@ -22,3 +22,6 @@
 (define (::* [x : MathTeX+Like] [y : MathTeX+Like]
              . [r : MathTeX+Like *])
   (::*-aux (list x) y r))
+
+(module* extra #f
+  (provide ::*-aux))

@@ -13,6 +13,8 @@
          object-classifier-pt
          object-classifier-pr
          object-classifier^
+         object-classifier^-pt
+         object-classifier^-pr
          inverse-image
          Etale
          ShTopos
@@ -31,14 +33,24 @@
 (define object-classifier
   @tex:mathbb{A})
 
+(define pt tex:bullet)
+
 (define object-classifier-pt
-  (object-classifier . _ . tex:bullet))
+  (object-classifier . _ . pt))
 
 (define object-classifier-pr
   @const{p})
 
 (define (object-classifier^ [V : MathTeX+Like])
   (object-classifier . ^ . (paren V)))
+
+(define (object-classifier^-pt [V : MathTeX+Like])
+  (sub-sup object-classifier
+           #:^ (paren V)
+           #:_ pt))
+
+(define (object-classifier^-pr [V : MathTeX+Like])
+  (object-classifier-pr . ^ . (paren V)))
 
 (define inverse-image ^*)
 

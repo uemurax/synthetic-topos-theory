@@ -19,16 +19,21 @@
     greater than or equal to @(math U),
     and let @(math W) be a universe
     strictly greater than @(math W).
-    Then the presheaf
+    Then the presheaves
     @(math ((object-classifier^ V)
-            . is-functor .
+            (object-classifier^-pt V)
+            . is-functor* .
             (opposite (Topos1 U))
             W))
-    is a sheaf.
+    are sheaves.
   }
   #:proof @proof[
     @paragraph{
-      By @ref["001H"].
+      @(math (object-classifier^ V))
+      is a sheaf by @ref["001H"].
+      @(math (object-classifier^-pt V))
+      is a sheaf because
+      coslicing commutes with limits.
     }
   ]
 ]

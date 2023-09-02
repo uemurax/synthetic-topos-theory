@@ -12,6 +12,7 @@
          object-classifier
          object-classifier-pt
          object-classifier-pr
+         object-classifier^
          inverse-image
          Etale
          ShTopos
@@ -35,6 +36,9 @@
 
 (define object-classifier-pr
   @const{p})
+
+(define (object-classifier^ [V : MathTeX+Like])
+  (object-classifier . ^ . (paren V)))
 
 (define inverse-image ^*)
 

@@ -12,6 +12,7 @@
          coslice
          comp
          morphism
+         Object
          Hom
          is-morphism
          is-object*
@@ -23,6 +24,8 @@
 (define is-object ::)
 
 (define is-object* ::*)
+
+(define Object @const{Obj})
 
 (define morphism ->)
 

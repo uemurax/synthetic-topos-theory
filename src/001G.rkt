@@ -34,7 +34,6 @@
     induces an equivalence
     @(math (((enlarge V) (C . slice . A))
             . equiv .
-            (((enlarge V) C) . slice . A)))
-    under @(math (C . slice . A)).
+            (((enlarge V) C) . slice . A))).
   }
 ]

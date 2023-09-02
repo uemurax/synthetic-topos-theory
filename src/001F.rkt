@@ -24,5 +24,7 @@
     for some universe @(math W)
     strictly greater than @(math V),
     is fully faithful.
+    We thus regard @(math C)
+    as a full subcategory of @(math ((enlarge V) C)).
   }
 ]

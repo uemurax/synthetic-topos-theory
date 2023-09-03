@@ -8,4 +8,5 @@
 @section[
   #:id (current-id)
   #:title @%{A universal property of @(math (Topos1 U))}
+  (include-part "001M.rkt")
 ]

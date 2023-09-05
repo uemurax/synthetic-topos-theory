@@ -12,6 +12,7 @@
          coslice
          comp
          morphism
+         morphism-chain
          Object
          Hom
          is-morphism
@@ -28,6 +29,8 @@
 (define Object @const{Obj})
 
 (define morphism ->)
+
+(define morphism-chain ->-chain)
 
 (define (is-morphism [f : MathTeX+Like]
                      [x : MathTeX+Like]

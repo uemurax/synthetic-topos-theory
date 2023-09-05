@@ -4,8 +4,14 @@
          (prefix-in l: "level.rkt")
          (prefix-in tex: morg/math/tex))
 
-(provide ->)
+(provide ->
+         ->-chain)
+
+(define ar tex:rightarrow)
 
 (define ->
-  (binary #:level l:-> tex:rightarrow
+  (binary #:level l:-> ar
           #:assoc 'right))
+
+(define ->-chain
+  (monoid #:level l:-> "" ar))

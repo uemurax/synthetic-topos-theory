@@ -16,6 +16,7 @@
          object-classifier^-pt
          object-classifier^-pr
          inverse-image
+         interpret
          Etale
          ShTopos
          Sh)
@@ -59,3 +60,10 @@
 
 (define (ShTopos [U : MathTeX+Like] [V : MathTeX+Like])
   (Sh . $* . (Topos1 U) V))
+
+(define (interpret [X : MathTeX+Like] [A : MathTeX+Like])
+  ((group
+    (paren #:left (tex:mathopen "[" tex:negthinspace "[")
+           #:right (tex:mathclose "]" tex:negthinspace "]")
+           A))
+   . _ . X))

@@ -3,6 +3,7 @@
 (require morg/math
          (prefix-in tex: morg/math/tex)
          (prefix-in l: "base/level.rkt")
+         "product.rkt"
          "base/const.rkt"
          "base/member.rkt"
          "base/arrow.rkt")
@@ -16,6 +17,7 @@
          Object
          Hom
          is-morphism
+         is-global-section
          is-object*
          is-object)
 
@@ -36,6 +38,10 @@
                      [x : MathTeX+Like]
                      [y : MathTeX+Like])
   (f . :: . (x . morphism . y)))
+
+(define (is-global-section [f : MathTeX+Like]
+                           [x : MathTeX+Like])
+  (is-morphism f (*) x))
 
 (define slice
   (binary #:level l:binary "/"))

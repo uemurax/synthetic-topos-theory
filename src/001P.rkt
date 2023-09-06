@@ -4,6 +4,7 @@
          "lib/index/notation.rkt"
          morg/math
          "lib/math/topos.rkt"
+         "lib/math/classifying-topos.rkt"
          "lib/math/logos.rkt"
          "lib/math/category.rkt"
          "lib/math/function.rkt"
@@ -21,6 +22,9 @@
   #:indexes @list[
     @n-index[#:key "[[]]"]{
       @(math (interpret X Y))
+    }
+    @index[#:key "object"]{
+      @(math Y)-objects in @(math X)
     }
   ]
   @paragraph{
@@ -45,5 +49,8 @@
             ((enlarge V) (Sh . $ . X))))
     to be
     @(math (R . comp . (pullback X))).
+    Generalized elements of @(math (interpret X Y))
+    are called
+    @dfn{@(math Y)-objects in @(math X)}.
   }
 ]

@@ -2,11 +2,13 @@
 
 (require morg/math
          (prefix-in tex: morg/math/tex)
+         (prefix-in l: "base/level.rkt")
          "base/const.rkt")
 
 (provide interpret
          etale-inclusion
          etale-coreflection
+         pull-model-back
          generic-object)
 
 (define (etale-inclusion [X : MathTeX+Like])
@@ -24,3 +26,6 @@
 
 (define (generic-object [X : MathTeX+Like])
   (@const{w} . _ . X))
+
+(define pull-model-back
+  (sup-op #:level l:unary "#"))

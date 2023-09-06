@@ -6,4 +6,5 @@
   (include-part "001P.rkt")
   (include-part "001Q.rkt")
   (include-part "001R.rkt")
+  (include-part "001S.rkt")
 ]

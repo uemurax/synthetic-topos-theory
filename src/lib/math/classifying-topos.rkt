@@ -22,7 +22,7 @@
     (paren #:left (tex:mathopen "[" tex:negthinspace "[")
            #:right (tex:mathclose "]" tex:negthinspace "]")
            A))
-   . _ . X))
+   . ^ . X))
 
 (define (generic-object [X : MathTeX+Like])
   (@const{w} . _ . X))

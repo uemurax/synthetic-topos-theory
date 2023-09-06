@@ -14,8 +14,8 @@
 (define U "U")
 (define V "V")
 (define X "X")
-(define Y "Y")
-(define R "R")
+(define Y "T")
+(define R (etale-coreflection X))
 
 @definition[
   #:id (current-id)
@@ -38,10 +38,12 @@
             ((Topos1 U) . slice . X)
             ((ShTopos U V) . slice . X)))
     induces a morphism of @(math V)-logoses
-    @(math (((enlarge V) (Sh . $ . X))
-            . morphism .
+    @(math ((etale-inclusion X)
+            . is-morphism .
+            ((enlarge V) (Sh . $ . X))
             ((ShTopos U V) . slice . X)))
-    which has a right adjoint @(math R).
+    which has a right adjoint
+    @(math R).
     We define a functor
     @(math ((Y . /-> . (interpret X Y))
             . is-functor .

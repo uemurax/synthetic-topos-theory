@@ -51,7 +51,7 @@
             ((enlarge V) (Sh . $ . X))))
     to be
     @(math (R . comp . (pullback X))).
-    Generalized elements of @(math (interpret X Y))
+    Global elements of @(math (interpret X Y))
     are called
     @dfn{@(math Y)-objects in @(math X)}.
   }

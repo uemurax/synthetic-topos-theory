@@ -7,5 +7,6 @@
     (include-part "001U.rkt")
     (include-part "001Y.rkt")
     (include-part "0022.rkt")
+    (include-part "0024.rkt")
   ]
 ]

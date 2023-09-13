@@ -28,7 +28,7 @@
       product
     }
     @n-index[#:key "Pi"]{
-      @(math (product x A B))
+      @(math (product x A (B . $ . x)))
     }
     @n-index[#:key "pack"]{
       @(math (pack x (b . $ . x)))

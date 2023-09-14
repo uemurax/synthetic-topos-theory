@@ -13,4 +13,5 @@
     @emph{type theory of spaces in @(math T)}.
     It is a type theory internal to @(math T).
   }
+  (include-part "0029.rkt")
 ]

@@ -14,4 +14,5 @@
     It is a type theory internal to @(math T).
   }
   (include-part "0029.rkt")
+  (include-part "002A.rkt")
 ]

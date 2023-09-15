@@ -1,6 +1,7 @@
 #lang morg
 
 (require "lib/article/definition.rkt"
+         "lib/index/notation.rkt"
          morg/math
          (prefix-in tex: morg/math/tex)
          "lib/math/type-theory/universe-level.rkt"
@@ -22,6 +23,11 @@
 
 @definition[
   #:id (current-id)
+  #:indexes @list[
+    @n-index[#:key "c"]{
+      @(math (mor->model S A))
+    }
+  ]
   @paragraph{
     Let @(math T) be a type theory.
     We work in @(math T).
@@ -33,14 +39,14 @@
             (Type Space empty-context si))).
     We define a function
     @disp{
-          @(math ((mor->model S)
+          @(math ((mor->model S A)
                   . is-elem .
                   ((Element Space (x . is-elem . S) A)
                    . -> .
                    (Element (Sheaf S) empty-context (space->sheaf S A)))))
     }
     by
-    @(math (((mor->model S) . $ . f)
+    @(math (((mor->model S A) . $ . f)
             . def-eq .
             ((space->sheaf S f)
              . subst .

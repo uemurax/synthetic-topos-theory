@@ -3,6 +3,7 @@
 (require morg/math
          "../classifying-topos.rkt"
          "../base/const.rkt"
+         "../base/seq.rkt"
          "function.rkt")
 
 (provide space->sheaf
@@ -15,5 +16,6 @@
 
 (define space->sheaf interpret)
 
-(define (mor->model [S : MathTeX+Like])
-  (@const{c} . _ . S))
+(define (mor->model [S : MathTeX+Like]
+                    [A : MathTeX+Like])
+  (@const{c} . _ . (S . |,| . A)))

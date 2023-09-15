@@ -18,7 +18,7 @@
   ((@const{Ctx} . _ . T) . $ . i))
 
 (define /-
-  (binary #:level l:relation tex:vdash))
+  (binary #:level l:/- tex:vdash))
 
 (define (Derivation [T : MathTeX+Like]
                     [C : MathTeX+Like]

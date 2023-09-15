@@ -19,6 +19,7 @@
   big-op
   |,w|
   :
+  /-
   |,|)
 
 (define big-op-1 (make-level big-op))

@@ -3,9 +3,11 @@
 (require morg/math
          (prefix-in tex: morg/math/tex)
          (prefix-in l: "base/level.rkt")
-         "base/apply.rkt")
+         "base/apply.rkt"
+         "base/arrow.rkt")
 
 (provide /->
+         ->
          $
          $*)
 

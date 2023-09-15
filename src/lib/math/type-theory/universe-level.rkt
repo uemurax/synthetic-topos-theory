@@ -13,6 +13,7 @@
          is-Level*
          <=
          zero
+         one
          succ)
 
 (define Level @const{Level})
@@ -27,6 +28,8 @@
   (binary #:level l:relation tex:le))
 
 (define zero "0")
+
+(define one "1")
 
 (define (succ [i : MathTeX+Like])
   (@const{succ} . $ . i))

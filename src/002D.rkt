@@ -10,7 +10,6 @@
          "lib/math/type-theory/etale.rkt")
 
 (define T "T")
-(define i "i")
 (define C tex:Gamma)
 (define A "A")
 
@@ -29,14 +28,12 @@
     as follows.
     @unordered-list[
       @list-item{
-        Let @(math (is-Level i))
-        and let @(math (C . is-elem . (Context Space i))).
+        Let @(math (C . is-elem . (Context Space one))).
         Then @(math ((Etale zero) . is-elem . (Type Space C one)))
         is petit.
       }
       @list-item{
-        Let @(math (is-Level i)),
-        let @(math (C . is-elem . (Context Space i))),
+        Let @(math (C . is-elem . (Context Space one))),
         and let @(math (A . is-elem . (Element Space C (Etale zero)))).
         Then @(math (A . is-elem . (Type Space C one)))
         is petit.

@@ -1,7 +1,15 @@
-#lang typed/racket
+#lang at-exp typed/racket
 
-(require "../classifying-topos.rkt")
+(require morg/math
+         "../classifying-topos.rkt"
+         "../base/const.rkt"
+         "function.rkt")
 
-(provide space->sheaf)
+(provide space->sheaf
+         Sheaf
+         generic-object)
+
+(define (Sheaf [S : MathTeX+Like])
+  (@const{Sh} . $ . S))
 
 (define space->sheaf interpret)

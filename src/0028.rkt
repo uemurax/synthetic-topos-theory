@@ -18,7 +18,9 @@
     It is a type theory
     internal to @(math T).
   }
+  (include-part "002K.rkt")
   (include-part "002G.rkt")
   (include-part "002H.rkt")
   (include-part "002I.rkt")
+  (include-part "002J.rkt")
 ]

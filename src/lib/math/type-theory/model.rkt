@@ -10,6 +10,7 @@
 (provide Context
          Derivation
          Type
+         empty-context
          Element)
 
 (define (Context [T : MathTeX+Like]
@@ -33,3 +34,6 @@
                  [C : MathTeX+Like]
                  [A : MathTeX+Like])
   (Derivation T C A))
+
+(define empty-context
+  (group))

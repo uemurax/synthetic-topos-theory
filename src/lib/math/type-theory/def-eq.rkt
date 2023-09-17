@@ -9,7 +9,7 @@
 (define def-eq:symbol tex:equiv)
 
 (define def-eq
-  (binary #:level l:relation def-eq:symbol))
+  (binary #:level l:def-eq def-eq:symbol))
 
 (module* extra #f
   (provide def-eq:symbol))

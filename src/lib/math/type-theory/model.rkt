@@ -16,6 +16,7 @@
          is-Context
          is-Type
          is-Element
+         Globalization
          Element)
 
 (define (Context [T : MathTeX+Like]
@@ -62,3 +63,7 @@
 
 (define empty-context/visible
   tex:epsilon)
+
+(define (Globalization [T1 : MathTeX+Like]
+                       [T2 : MathTeX+Like])
+  ((@const{Glob} . _ . T1) . $ . T2))

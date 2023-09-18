@@ -1,7 +1,14 @@
 #lang at-exp typed/racket
 
-(require "../base/const.rkt")
+(require morg/math
+         "../base/const.rkt"
+         "../pullback.rkt"
+         "function.rkt")
 
-(provide Space)
+(provide Space
+         space->space)
 
 (define Space @const{Sp})
+
+(define (space->space [S : MathTeX+Like] [A : MathTeX+Like])
+  ((pullback S) . $ . A))

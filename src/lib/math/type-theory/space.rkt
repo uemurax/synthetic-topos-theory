@@ -3,6 +3,7 @@
 (require morg/math
          "../base/const.rkt"
          "../pullback.rkt"
+         (submod "base.rkt" extra)
          "function.rkt")
 
 (provide Space
@@ -16,3 +17,9 @@
 
 (define (generic-global-section [S : MathTeX+Like])
   (@const{w} . _ . S))
+
+(define (universe [i : MathTeX+Like])
+  (@universe-style{V} . $ . i))
+
+(module* extra #f
+  (provide universe))

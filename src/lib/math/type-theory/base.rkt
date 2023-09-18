@@ -6,5 +6,10 @@
 
 (provide universe)
 
+(define universe-style tex:mathcal)
+
 (define (universe [i : MathTeX+Like])
-  (@tex:mathcal{U} . $ . i))
+  (@universe-style{U} . $ . i))
+
+(module* extra #f
+  (provide universe-style))

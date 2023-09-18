@@ -18,35 +18,18 @@
     Let @(math (is-Level i)).
     @unordered-list[
       @list-item{
-        A universe @(math (Etale i))
+        A univalent universe @(math (Etale i))
         in @(math (Type (succ i)))
         is constructed.
-      }
-      @list-item{
-        @(math (Type (succ i)))
-        has function types
-        whose domains are in @(math (Etale i)).
-        In particular,
-        univalence for @(math (Etale i)) makes sense.
-      }
-      @list-item{
-        @(math (Etale i)) is univalent.
       }
       @list-item{
         @(math (Etale i)) is closed under
         the unit type,
         pair types,
-        and identity types.
-      }
-      @list-item{
-        @(math (Etale i)) has finite colimits
-        that admit elimination at all levels.
-      }
-      @list-item{
-        @(math (Etale i)) has coproducts
-        indexed over any @(math (A . is-Type . i))
-        in @(math T)
-        that admit elimination at all levels.
+        identity types,
+        finite colimits,
+        and coproducts
+        indexed over any @(math (A . is-Type . i)).
       }
     ]
   }

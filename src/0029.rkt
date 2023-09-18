@@ -3,6 +3,8 @@
 (require "lib/article/rule.rkt"
          morg/math
          "lib/math/type-theory/universe-level.rkt"
+         (submod "lib/math/type-theory/space.rkt" extra)
+         "lib/math/type-theory/element.rkt"
          "lib/math/type-theory/type.rkt")
 
 (define T "T")
@@ -19,8 +21,15 @@
     has the unit type,
     pair types,
     identity types,
-    and products indexed over
-    any @(math (A . is-Type . i))
+    function types,
+    finite colimits,
+    and products and coproducts indexed over
+    any @(math (A . is-Type . (succ i)))
     in @(math T).
+    Moreover, @(math (Type (succ i)))
+    is represented by a univalent universe
+    @(math ((universe (succ i))
+            . is-elem .
+            (Type (succ (succ i))))).
   }
 ]

@@ -7,6 +7,7 @@
          "lib/math/type-theory/universe-level.rkt"
          "lib/math/type-theory/element.rkt"
          "lib/math/type-theory/model.rkt"
+         "lib/math/type-theory/base.rkt"
          "lib/math/type-theory/etale.rkt")
 
 (define T "T")
@@ -43,8 +44,10 @@
         the unit type,
         pair types,
         identity types,
-        and products indexed over any
-        @(math (A . is-elem . (Etale zero))).
+        products indexed over any
+        @(math (A . is-elem . (universe zero))),
+        and function types whose domains are
+        in @(math (Etale zero)).
       }
     ]
   }

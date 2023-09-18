@@ -3,7 +3,11 @@
 (require morg/math
          "../base/const.rkt")
 
-(provide GlobalSection)
+(provide GlobalSection
+         Constant)
 
 (define (GlobalSection [T : MathTeX+Like])
   (@const{GS} . _ . T))
+
+(define (Constant [T : MathTeX+Like])
+  (@const{C} . _ . T))

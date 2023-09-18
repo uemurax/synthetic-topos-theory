@@ -25,17 +25,16 @@
     Let @(math (is-Level i)).
     @unordered-list[
       @list-item{
-        @(math (t:Type (succ i))) has products
+        @(math (t:Type (succ i))) has products and coproducts
         indexed over any
-        @(math (A . t:is-Type . i))
+        @(math (A . t:is-Type . (succ i)))
         in @(math T).
       }
       @list-item{
-        @(math (Etale i)) has coproducts
+        @(math (Etale i)) is closed under coproducts
         indexed over any
         @(math (A . t:is-Type . i))
-        in @(math T)
-        that admit elimination at all levels.
+        in @(math T).
       }
     ]
   }

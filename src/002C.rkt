@@ -40,6 +40,9 @@
         Then @(math ((m:Context T2 i) . is-Type . (succ i)))
         denotes the type of
         contexts of level @(math i) in @(math T2).
+        It also denotes the category of
+        contexts of level @(math i) and
+        morphisms between them.
       }
       @list-item{
         Let @(math (is-Level i))

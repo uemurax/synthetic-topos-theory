@@ -2,5 +2,4 @@
 
 (require "../category.rkt")
 
-(provide is-morphism
-         Hom)
+(provide (all-from-out "../category.rkt"))

@@ -17,7 +17,7 @@
     Let @(math U) be a universe
     and let @(math C) be a @(math U)-small category.
     Then the functor
-    @(math ((X . /-> . (C . action . X))
+    @(math ((X . /-> . (C . action-l . X))
             . is-functor .
             (Topos1 U)
             (Topos1 U)))

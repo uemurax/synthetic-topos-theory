@@ -9,7 +9,6 @@
     (include-part "0022.rkt")
     (include-part "0024.rkt")
     (include-part "0027.rkt")
-    (include-part "002O.rkt")
     (include-part "0028.rkt")
     (include-part "002V.rkt")
   ]

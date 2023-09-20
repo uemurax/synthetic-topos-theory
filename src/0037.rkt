@@ -17,4 +17,5 @@
     but hom types are not necessarily well-behaved.
     For example, composition is not always defined.
   }
+  (include-part "0038.rkt")
 ]

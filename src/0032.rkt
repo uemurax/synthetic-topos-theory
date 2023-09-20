@@ -20,6 +20,9 @@
     @index[#:key "categorically fibrant object"]{
       categorically fibrant object
     }
+    @index[#:key "categorical fibration"]{
+      categorical fibration
+    }
   ]
   @paragraph{
     Let @(math U) be a universe
@@ -35,9 +38,10 @@
             (ShTopos U V)))
     preserves @(math U)-small limits.
     More generally,
-    we say an object
-    @(math (B . is-object . ((ShTopos U V) . slice . A)))
-    is @dfn{categorically fibrant}
+    we say a morphism
+    @(math (B . morphism . A))
+    in @(math (ShTopos U V))
+    is a @dfn{categorical fibration}
     if the functor
     @(math ((C . /-> . (C . power . B))
             . is-functor .

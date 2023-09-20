@@ -6,6 +6,7 @@
          "product.rkt"
          "base/const.rkt"
          "base/member.rkt"
+         "base/apply.rkt"
          "base/arrow.rkt")
 
 (provide opposite
@@ -16,6 +17,7 @@
          morphism-chain
          Object
          Hom
+         Cat
          is-morphism
          is-global-section
          is-object*
@@ -56,3 +58,6 @@
 
 (define (Hom [C : MathTeX+Like])
   (@const{Hom} . _ . C))
+
+(define (Cat [U : MathTeX+Like])
+  (@const{Cat} . $ . U))

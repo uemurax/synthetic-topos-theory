@@ -24,4 +24,5 @@
   (include-part "001K.rkt")
   (include-part "0030.rkt")
   (include-part "0031.rkt")
+  (include-part "0032.rkt")
 ]

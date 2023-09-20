@@ -2,10 +2,14 @@
 
 (require "lib/article/exercise.rkt"
          morg/math
+         "lib/math/globular.rkt"
+         "lib/math/function.rkt"
+         "lib/math/power.rkt"
          "lib/math/topos.rkt")
 
 (define U "U")
 (define V "V")
+(define X "X")
 
 @exercise[
   #:id (current-id)
@@ -20,6 +24,7 @@
     identities,
     composition,
     diagonal,
-    and @(math V)-small products.
+    @(math V)-small products,
+    and @(math (X . /-> . ((cell "1") . power . X))).
   }
 ]

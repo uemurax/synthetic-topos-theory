@@ -18,7 +18,4 @@
     For example, composition is not always defined.
   }
   (include-part "0038.rkt")
-  (include-part "0039.rkt")
-  (include-part "003A.rkt")
-  (include-part "003B.rkt")
 ]

@@ -9,6 +9,7 @@
 
 (provide is-functor
          is-functor*
+         (rename-out [->-symbol functor-symbol])
          Functor
          functor)
 

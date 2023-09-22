@@ -6,7 +6,10 @@
          "base/member.rkt")
 
 (provide equiv
+         equiv-symbol
          is-equiv)
+
+(define equiv-symbol tex:simeq)
 
 (define equiv
   (binary #:level l:relation tex:simeq))

@@ -4,7 +4,10 @@
          (prefix-in tex: morg/math/tex)
          "../base/apply.rkt")
 
-(provide Etale)
+(provide Etale
+         Etale-symbol)
+
+(define Etale-symbol (tex:mathcal "E"))
 
 (define (Etale [i : MathTeX+Like])
-  ((tex:mathcal "E") . $ . i))
+  (Etale-symbol . $ . i))

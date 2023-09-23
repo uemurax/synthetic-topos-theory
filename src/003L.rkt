@@ -63,11 +63,7 @@
         @(math (Sheaf S1 i))
         @(math equiv-symbol) @%{fibrant replacement}
         @(math (Sheaf ((y . is-elem . S2) . * . (Fiber . $* . f y)) i))
-        @(math equiv-symbol) @ref["002Y"]
-        @(math (Element (Globalization (ty:Sheaf S2) Space)
-                        (x . is-elem . S3)
-                        (Etale i)))
-        @(math equiv-symbol) @%{definition}
+        @(math equiv-symbol) @ref["003L"]
         @(math (Element (ty:Sheaf S2)
                         empty-context
                         (Sheaf S3 i)))

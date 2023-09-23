@@ -1,5 +1,7 @@
 #lang typed/racket
 
-(require "../product.rkt")
+(require "../product.rkt"
+         "../tuple.rkt")
 
-(provide *)
+(provide *
+         tuple)

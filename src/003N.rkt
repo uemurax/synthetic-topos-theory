@@ -2,7 +2,6 @@
 
 (require "lib/article/observation.rkt"
          morg/math
-         (prefix-in tex: morg/math/tex)
          morg/eq-reasoning
          "lib/math/type-theory/universe-level.rkt"
          "lib/math/type-theory/function.rkt"
@@ -16,7 +15,7 @@
          "lib/math/type-theory/etale.rkt")
 
 (define T "T")
-(define S tex:Sigma)
+(define S "X")
 (define S1 (S . _ . "1"))
 (define S2 (S . _ . "2"))
 (define i "i")
@@ -29,7 +28,7 @@
     Let @(math T) be a base type theory.
     We work in @(math T).
     Let @(math (is-Level i)),
-    let @(math S1) be a geometric theory,
+    let @(math S1) be a topos,
     and let @(math (S2 . $ . x))
     be a petit space
     under assumption @(math (x . is-elem . S1)).

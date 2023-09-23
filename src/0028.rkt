@@ -1,17 +1,16 @@
 #lang morg
 
-(require morg/math
-         (prefix-in tex: morg/math/tex))
+(require morg/math)
 
 (define T "T")
-(define S tex:Sigma)
+(define S "X")
 
 @section[
   #:id (current-id)
   #:title @%{Type theory of sheaves}
   @paragraph{
     Let @(math T) be a type theory
-    and let @(math S) be a geometric theory
+    and let @(math S) be a topos
     in @(math T).
     We introduce the
     @emph{type theory of sheaves on @(math S)}.

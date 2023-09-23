@@ -3,7 +3,6 @@
 (require "lib/article/definition.rkt"
          "lib/index/notation.rkt"
          morg/math
-         (prefix-in tex: morg/math/tex)
          "lib/math/type-theory/universe-level.rkt"
          "lib/math/topos-theory/morphism.rkt"
          "lib/math/type-theory/category.rkt"
@@ -11,7 +10,7 @@
          "lib/math/topos-theory/sheaf.rkt")
 
 (define T "T")
-(define S tex:Sigma)
+(define S "X")
 (define S1 (S . _ . "1"))
 (define S2 (S . _ . "2"))
 (define f "f")
@@ -32,7 +31,7 @@
     We work in @(math T).
     Let @(math (is-Level i)),
     let @(math S1) and @(math S2)
-    be geometric theories,
+    be toposes,
     and let @(math (f . is-morphism . S1 S2))
     be a morphism.
     The @dfn{inverse image functor}

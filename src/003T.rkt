@@ -3,7 +3,6 @@
 (require "lib/article/proposition.rkt"
          "lib/article/proof.rkt"
          morg/math
-         (prefix-in tex: morg/math/tex)
          "lib/math/type-theory/function.rkt"
          "lib/math/type-theory/directed.rkt"
          "lib/math/type-theory/element.rkt"
@@ -14,7 +13,7 @@
          "lib/math/type-theory/tuple.rkt")
 
 (define T "T")
-(define S tex:Sigma)
+(define S "X")
 (define a "a")
 (define x "x")
 
@@ -23,7 +22,7 @@
   @paragraph{
     Let @(math T) be a base type theory.
     We work in @(math T).
-    Let @(math S) be a geometric theory
+    Let @(math S) be a topos
     and let @(math a) be a point of @(math S).
     Suppose that the type family
     @(math ((x . is-elem . S)

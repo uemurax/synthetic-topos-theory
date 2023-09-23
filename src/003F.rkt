@@ -2,7 +2,6 @@
 
 (require "lib/article/observation.rkt"
          morg/math
-         (prefix-in tex: morg/math/tex)
          morg/eq-reasoning
          "lib/math/type-theory/universe-level.rkt"
          "lib/math/type-theory/type.rkt"
@@ -16,7 +15,7 @@
          "lib/math/topos-theory/model.rkt")
 
 (define T "T")
-(define S tex:Sigma)
+(define S "X")
 (define i "i")
 (define A "A")
 (define x "x")
@@ -30,7 +29,7 @@
     let @(math (A
                 . is-elem .
                 (m:Type Space m:empty-context (succ i)))),
-    and let @(math S) be a geometric theory.
+    and let @(math S) be a topos.
     Then we have the following equivalences.
     @disp{
       @eq-reasoning[

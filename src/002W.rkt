@@ -2,7 +2,6 @@
 
 (require "lib/article/exercise.rkt"
          morg/math
-         (prefix-in tex: morg/math/tex)
          "lib/math/type-theory/universe-level.rkt"
          "lib/math/type-theory/model.rkt"
          "lib/math/type-theory/sheaf.rkt"
@@ -11,7 +10,7 @@
          "lib/math/type-theory/etale.rkt")
 
 (define T "T")
-(define S tex:Sigma)
+(define S "X")
 (define i "i")
 (define A "A")
 
@@ -19,7 +18,7 @@
   #:id (current-id)
   @paragraph{
     Let @(math T) be a base type theory,
-    and let @(math S) be a geometric theory
+    and let @(math S) be a topos
     in @(math T).
     We work in @(math (Globalization (Sheaf S) Space)).
     Let @(math (is-Level i)).

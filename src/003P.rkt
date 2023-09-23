@@ -3,7 +3,6 @@
 (require "lib/article/definition.rkt"
          "lib/index/notation.rkt"
          morg/math
-         (prefix-in tex: morg/math/tex)
          "lib/math/type-theory/category.rkt"
          "lib/math/topos-theory/sheaf.rkt"
          "lib/math/topos-theory/morphism.rkt"
@@ -12,7 +11,7 @@
          (prefix-in ess: "lib/math/topos-theory/essential.rkt"))
 
 (define T "T")
-(define S tex:Sigma)
+(define S "X")
 (define S1 (S . _ . "1"))
 (define S2 (S . _ . "2"))
 (define f "f")
@@ -31,7 +30,7 @@
     Let @(math T) be a base type theory.
     We work in @(math T).
     Let @(math S1) and @(math S2) be
-    geometric theories.
+    toposes.
     We say a morphism
     @(math (f . is-morphism . S1 S2))
     is @dfn{essential} if

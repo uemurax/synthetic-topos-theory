@@ -1,10 +1,9 @@
 #lang morg
 
 (require morg/math
-         (prefix-in tex: morg/math/tex)
          "lib/math/type-theory/sheaf.rkt")
 
-(define S tex:Sigma)
+(define S "X")
 
 @section[
   #:id (current-id)
@@ -30,7 +29,7 @@
     The second axiom (@ref["002Y"])
     relates type theories of spaces
     in different base type theories.
-    Let @(math S) be a geometric theory.
+    Let @(math S) be a topos
     Then @ref["002Y"] asserts that
     spaces over @(math S) are equivalent to
     spaces in @(math (Sheaf S)).

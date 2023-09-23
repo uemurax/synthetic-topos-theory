@@ -3,7 +3,6 @@
 (require "lib/article/definition.rkt"
          "lib/index/notation.rkt"
          morg/math
-         (prefix-in tex: morg/math/tex)
          morg/eq-reasoning
          "lib/math/type-theory/universe-level.rkt"
          "lib/math/topos-theory/morphism.rkt"
@@ -16,7 +15,7 @@
          (prefix-in ty: "lib/math/type-theory/global-section.rkt"))
 
 (define T "T")
-(define S tex:Sigma)
+(define S "X")
 (define i "i")
 
 @definition[
@@ -39,7 +38,7 @@
     Let @(math T) be a type theory.
     We work in @(math T).
     Let @(math (is-Level i))
-    and let @(math S) be a geometric theory.
+    and let @(math S) be a topos.
     We define the
     @dfn{global section functor}
     @disp{

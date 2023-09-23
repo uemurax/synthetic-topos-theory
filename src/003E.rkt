@@ -3,7 +3,6 @@
 (require "lib/article/definition.rkt"
          "lib/index/notation.rkt"
          morg/math
-         (prefix-in tex: morg/math/tex)
          "lib/math/type-theory/sheaf.rkt"
          "lib/math/type-theory/space.rkt"
          "lib/math/type-theory/function.rkt"
@@ -11,8 +10,8 @@
          "lib/math/type-theory/global-section.rkt")
 
 (define T "T")
-(define S tex:Sigma)
-(define X "X")
+(define S "X")
+(define X "Z")
 
 @definition[
   #:id (current-id)
@@ -24,7 +23,7 @@
   @paragraph{
     Let @(math T) be a base type theory.
     We work in @(math T).
-    Let @(math S) be a geometric theory.
+    Let @(math S) be a topos.
     We define a translation
     @(math (X . /-> . (space->sheaf S X)))
     from @(math Space)

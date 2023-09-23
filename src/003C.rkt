@@ -3,7 +3,6 @@
 (require "lib/article/definition.rkt"
          "lib/index/notation.rkt"
          morg/math
-         (prefix-in tex: morg/math/tex)
          "lib/math/type-theory/universe-level.rkt"
          "lib/math/equiv.rkt"
          "lib/math/type-theory/type.rkt"
@@ -16,7 +15,7 @@
 
 (define T "T")
 (define i "i")
-(define S tex:Sigma)
+(define S "X")
 (define A "A")
 (define x "x")
 
@@ -37,7 +36,7 @@
     let @(math (A
                 . is-elem .
                 (m:Type Space m:empty-context (succ i)))),
-    and let @(math S) be a geometric theory.
+    and let @(math S) be a topos.
     We define
     @(math ((Model S A)
             . def-eq .

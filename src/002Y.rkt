@@ -3,7 +3,6 @@
 (require "lib/article/axiom.rkt"
          "lib/index/notation.rkt"
          morg/math
-         (prefix-in tex: morg/math/tex)
          "lib/math/type-theory/space.rkt"
          "lib/math/type-theory/element.rkt"
          "lib/math/type-theory/model.rkt"
@@ -14,9 +13,9 @@
          "lib/math/type-theory/substitution.rkt")
 
 (define T "T")
-(define S tex:Sigma)
+(define S "X")
 (define x "x")
-(define X "X")
+(define X "Z")
 
 @axiom[
   #:id (current-id)
@@ -28,7 +27,7 @@
   @paragraph{
     Let @(math T) be a base type theory.
     We work in @(math T).
-    Let @(math S) be a geometric theory.
+    Let @(math S) be a topos.
     @unordered-list[
       @list-item{
         @(math ((generic-global-section S)

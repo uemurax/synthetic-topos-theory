@@ -2,7 +2,6 @@
 
 (require "lib/article/exercise.rkt"
          morg/math
-         (prefix-in tex: morg/math/tex)
          "lib/math/type-theory/model.rkt"
          "lib/math/type-theory/etale.rkt"
          "lib/math/type-theory/universe-level.rkt"
@@ -13,7 +12,7 @@
          "lib/math/type-theory/function.rkt")
 
 (define T "T")
-(define S tex:Sigma)
+(define S "X")
 (define S1 (S . _ . "1"))
 (define S2 (S . _ . "2"))
 (define x "x")
@@ -23,7 +22,7 @@
   @paragraph{
     Let @(math T) be a base type theory.
     We work in @(math T).
-    Let @(math S1) be a geometric theory
+    Let @(math S1) be a topos
     and let
     @(math (S2
             . is-elem .

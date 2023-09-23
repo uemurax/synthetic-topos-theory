@@ -2,14 +2,13 @@
 
 (require "lib/article/definition.rkt"
          morg/math
-         (prefix-in tex: morg/math/tex)
          "lib/math/type-theory/function.rkt"
          "lib/math/type-theory/category.rkt"
          "lib/math/type-theory/blank.rkt"
          "lib/math/type-theory/tuple.rkt")
 
 (define T "T")
-(define S tex:Sigma)
+(define S "X")
 (define a "a")
 
 @definition[
@@ -22,7 +21,7 @@
   @paragraph{
     Let @(math T) be a base type theory.
     We work in @(math T).
-    Let @(math S) be a geometric theory.
+    Let @(math S) be a topos.
     We say a point @(math a) of @(math S)
     is @dfn{essential} if
     the morphism

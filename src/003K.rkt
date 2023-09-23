@@ -28,6 +28,12 @@
     @n-index[#:key "?"]{
       @(math (global-section S))
     }
+    @index[#:key "constant sheaf"]{
+      constant sheaf
+    }
+    @n-index[#:key "?"]{
+      @(math (constant-sheaf S))
+    }
   ]
   @paragraph{
     Let @(math T) be a type theory.
@@ -52,5 +58,12 @@
         @(math (universe i))
       ]
     }
+    By @ref["002R"],
+    @(math (global-section S))
+    has a left adjoint
+    which we call the
+    @dfn{constant sheaf functor}
+    and is denoted by
+    @(math (constant-sheaf S)).
   }
 ]

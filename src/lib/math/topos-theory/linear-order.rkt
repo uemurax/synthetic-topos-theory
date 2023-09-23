@@ -3,11 +3,13 @@
 (require morg/math
          (prefix-in tex: morg/math/tex)
          "../base/const.rkt"
+         (prefix-in f: "../base/free.rkt")
          (prefix-in l: "../base/level.rkt"))
 
 (provide LinearOrder
          Carrier
          <=
+         free
          bottom
          top)
 
@@ -21,3 +23,6 @@
 (define bottom @const{b})
 
 (define top @const{t})
+
+(define (free [n : MathTeX+Like])
+  ((group (f:free n)) . _ . LinearOrder))

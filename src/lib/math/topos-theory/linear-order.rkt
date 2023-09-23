@@ -9,6 +9,7 @@
 (provide LinearOrder
          Carrier
          <=
+         <=-symbol
          free
          bottom
          top)
@@ -17,8 +18,10 @@
 
 (define Carrier @const{Carrier})
 
+(define <=-symbol tex:le)
+
 (define <=
-  (binary #:level l:relation tex:le))
+  (binary #:level l:relation <=-symbol))
 
 (define bottom @const{b})
 

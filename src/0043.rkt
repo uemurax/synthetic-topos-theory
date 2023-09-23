@@ -36,7 +36,7 @@
         @(math (lo:Carrier . is-elem . Type))
       }
       @list-item{
-        @(math ((x y . /->* . (x . lo:<= . y))
+        @(math ((group lo:<=-symbol)
                 . is-elem .
                 (lo:Carrier . -> . (lo:Carrier . -> . Prop))))
       }

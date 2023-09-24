@@ -28,6 +28,9 @@
     @n-index[#:key "GS"]{
       @(math (GlobalSection T))
     }
+    @index[#:key "global section translation"]{
+      global section translation
+    }
   ]
   @paragraph{
     Let @(math T1) be a base type theory
@@ -41,6 +44,7 @@
               T2
               Self))
     }
+    called the @dfn{global section translation}
     as follows.
     @unordered-list[
       @list-item{

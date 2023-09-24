@@ -1,6 +1,7 @@
 #lang morg
 
 (require "lib/article/rule.rkt"
+         "lib/index/notation.rkt"
          morg/math
          "lib/math/type-theory/universe-level.rkt"
          "lib/math/type-theory/etale.rkt"
@@ -12,6 +13,14 @@
 
 @rule[
   #:id (current-id)
+  #:indexes @list[
+    @index[#:key "etale type"]{
+      étale type
+    }
+    @n-index[#:key "E"]{
+      @(math (Etale i))
+    }
+  ]
   @paragraph{
     Let @(math T) be a type theory.
     We work in the type theory of spaces in @(math T).
@@ -20,6 +29,7 @@
       @list-item{
         A univalent universe @(math (Etale i))
         in @(math (Type (succ i)))
+        of @dfn{étale types}
         is constructed.
       }
       @list-item{

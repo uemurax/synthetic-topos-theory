@@ -7,7 +7,6 @@
          "lib/math/type-theory/natural.rkt"
          (prefix-in lo: "lib/math/topos-theory/linear-order.rkt")
          "lib/math/type-theory/directed.rkt"
-         "lib/math/type-theory/finite.rkt"
          "lib/math/type-theory/record.rkt")
 
 (define T "T")
@@ -27,12 +26,12 @@
   #:proof @proof[
     @paragraph{
       Let @(math (A . is-elem . lo:LinearOrder)).
-      By @ref["0045"]
-      and by the definition of @(math (lo:free n)),
+      By @ref["004A"],
       the type @(math ((lo:free n) . hom . A))
       is equivalent to
-      the type of order-preserving functions
-      from @(math (Finite n)) to @(math A).
+      the type of increasing chains
+      of points of @(math A)
+      of length @(math n).
       That type is constructible
       from @(math (A . |.| . lo:Carrier))
       and @(math (A . |.| . lo:<=-symbol))

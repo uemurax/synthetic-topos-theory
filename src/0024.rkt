@@ -23,10 +23,6 @@
         some assumptions from @(math T1).
       }
       @list-item{
-        A construction in @(math T1) cannot have
-        assumptions from @(math T2).
-      }
-      @list-item{
         @(math T2) is an
         @emph{algebraic model of type theory}
         in @(math T1).
@@ -42,4 +38,5 @@
   (include-part "002R.rkt")
   (include-part "002T.rkt")
   (include-part "002U.rkt")
+  (include-part "004F.rkt")
 ]

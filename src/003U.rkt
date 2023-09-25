@@ -22,9 +22,9 @@
   ]
   @paragraph{
     Let @(math T) be a base type theory.
-    We work in @(math T).
+    We work in the type theory of spaces in @(math T).
     Let @(math X) be a topos.
-    We say a point @(math a) of @(math X)
+    We say a point @(math (a . is-elem . X))
     is @dfn{coétale} if
     the type family
     @(math ((x . is-elem . X)

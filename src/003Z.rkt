@@ -16,7 +16,7 @@
   ]
   @paragraph{
     Let @(math T) be a base type theory.
-    We work in @(math T).
+    We work in type theory of spaces in @(math T).
     We say a point of @(math Type)
     is @dfn{finitely presented}
     if it is constructed from @(math (*))

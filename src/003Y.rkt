@@ -13,7 +13,7 @@
   #:id (current-id)
   @paragraph{
     Let @(math T) be a base type theory.
-    We work in @(math T).
+    We work in the type theory of spaces in @(math T).
     Let @(math X) be a topos.
     Then coétale points of @(math X)
     are closed under

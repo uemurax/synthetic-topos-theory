@@ -18,10 +18,9 @@
   #:id (current-id)
   @paragraph{
     Let @(math T) be a base type theory.
-    We work in @(math T).
-    Let @(math (n . is-elem . Natural))
-    and let @(math (A . is-elem . lo:LinearOrder))
-    be a point.
+    We work in the type theory of spaces @(math T).
+    Let @(math (n . is-elem . Natural)) in @(math T)
+    and let @(math (A . is-elem . lo:LinearOrder)).
     Then the morphisms
     from @(math (lo:free n))
     to @(math A)

@@ -2,10 +2,8 @@
 
 (require "lib/article/exercise.rkt"
          morg/math
-         "lib/math/type-theory/model.rkt"
          "lib/math/type-theory/etale.rkt"
          "lib/math/type-theory/universe-level.rkt"
-         "lib/math/type-theory/space.rkt"
          "lib/math/type-theory/element.rkt"
          "lib/math/type-theory/category.rkt"
          "lib/math/type-theory/tuple.rkt"
@@ -26,9 +24,7 @@
     and let
     @(math (S2
             . is-elem .
-            (Element Space
-                     (x . is-elem . S1)
-                     (Etale zero)))).
+            (S1 . -> . (Etale zero)))).
     Then the first projection
     @(math (((x . is-elem . S1) . * . (S2 . $ . x))
             . morphism .

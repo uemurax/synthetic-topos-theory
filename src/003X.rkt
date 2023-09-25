@@ -18,7 +18,7 @@
   #:id (current-id)
   @paragraph{
     Let @(math T) be a base type theory.
-    We work in @(math T).
+    We work in the type theory of spaces @(math T).
     Then the point @(math ((*) . is-elem . Type))
     is coétale.
   }

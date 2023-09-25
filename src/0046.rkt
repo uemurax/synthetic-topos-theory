@@ -17,7 +17,7 @@
   #:id (current-id)
   @paragraph{
     Let @(math T) be a base type theory.
-    We work in @(math T).
+    We work in the type theory of spaces in @(math T).
     Let @(math (n . is-elem . Natural)).
     Then the point
     @(math ((lo:free n) . is-elem . lo:LinearOrder))

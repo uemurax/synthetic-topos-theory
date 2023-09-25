@@ -22,7 +22,7 @@
     pair types,
     identity types,
     function types,
-    finite colimits,
+    inductive types,
     and products and coproducts indexed over
     any @(math (A . is-Type . (succ i)))
     in @(math T).

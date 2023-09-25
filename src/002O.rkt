@@ -13,6 +13,5 @@
     also acts as
     a @emph{logical framework for toposes}.
   }
-  (include-part "002D.rkt")
   (include-part "002E.rkt")
 ]

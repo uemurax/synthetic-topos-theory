@@ -10,6 +10,7 @@
   (include-part "001T.rkt")
   (include-part "0039.rkt")
   (include-part "003V.rkt")
+  (include-part "004M.rkt")
   (include-part "0042.rkt")
   #:back @list[
     (include-part "term-index.rkt")

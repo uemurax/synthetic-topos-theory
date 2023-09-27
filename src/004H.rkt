@@ -19,8 +19,8 @@
     We work in @(math T).
     We say a topos @(math X) is a
     @dfn{subtopos (of @(math (*)))}
-    if the counit at @(math X)
-    for the constant sheaf and global section adjunction
+    if the counit of the
+    constant sheaf and global section adjunction for @(math X)
     is an equivalence.
   }
 ]

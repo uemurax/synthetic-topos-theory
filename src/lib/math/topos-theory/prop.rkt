@@ -9,9 +9,10 @@
          forall
          not
          bottom
+         top
          or)
 
-(define Prop @const{Prop})
+(define Prop tex:Omega)
 
 (define (forall [x : MathTeX+Like]
                 [P : MathTeX+Like])
@@ -24,6 +25,8 @@
   (unary #:level l:unary tex:neg))
 
 (define bottom tex:bot)
+
+(define top tex:top)
 
 (define or
   (monoid #:level l:binary bottom tex:lor))

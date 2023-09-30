@@ -26,7 +26,8 @@
       by countable coproducts,
       finite limits,
       and finite colimits
-      by the join construction.
+      by the join construction
+      @ref["Rijke--2017-0000"].
     }
   ]
 ]

@@ -36,7 +36,6 @@
     (include-part "000A.rkt")
     (include-part "001L.rkt")
     (include-part "0015.rkt")
-    (include-part "001O.rkt")
     (include-part "004C.rkt")
   ]
 ]

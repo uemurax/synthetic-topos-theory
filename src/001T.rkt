@@ -64,6 +64,13 @@
     @emph{all} base type theories,
     so they are more powerful than they look.
   }
+  @paragraph{
+    The presentation of the topical type theory here
+    is rather informal.
+    A formal definition of the topical type theory
+    and its semantics
+    have not been developed yet.
+  }
   #:subsections @list[
     (include-part "001U.rkt")
     (include-part "001Y.rkt")

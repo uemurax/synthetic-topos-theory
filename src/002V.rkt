@@ -29,12 +29,12 @@
     The second axiom (@ref["002Y"])
     relates type theories of spaces
     in different base type theories.
-    Let @(math S) be a topos.
-    Then @ref["002Y"] asserts that
-    spaces over @(math S) are equivalent to
+    It asserts that
+    spaces over a topos @(math S) are equivalent to
     spaces in @(math (Sheaf S)).
   }
   (include-part "002W.rkt")
   (include-part "002X.rkt")
+  (include-part "002U.rkt")
   (include-part "002Y.rkt")
 ]

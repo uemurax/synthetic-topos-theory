@@ -44,7 +44,7 @@
     However, some important properties
     of this category is not internal.
     For example,
-    the standard @(math n)-simplices are tiny.
+    the standard @(math n)-simplex is tiny.
     Tininess refers to the hom functor
     to the “base” category of types.
     To speak about tininess in the internal language,

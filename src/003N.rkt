@@ -30,7 +30,7 @@
     Let @(math (is-Level i)),
     let @(math S1) be a topos,
     and let @(math (S2 . $ . x))
-    be a petit space
+    be a topos
     under assumption @(math (x . is-elem . S1)).
     Then we have the following equivalences.
     @disp{

@@ -26,7 +26,7 @@
   ]
   @paragraph{
     Let @(math T) be a base type theory.
-    We work in @(math T).
+    We work in the type theory of spaces in @(math T).
     We define the
     @dfn{topos of linear orders}
     @(math lo:LinearOrder)

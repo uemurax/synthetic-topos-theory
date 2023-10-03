@@ -7,6 +7,8 @@
   (include-part "Cartmell--1978-0000.rkt")
   (include-part "Dybjer--1996-0000.rkt")
   (include-part "HoTTBook.rkt")
+  (include-part "Mac-Lane--Moerdijk--1992-0000.rkt")
+  (include-part "Riehl--Shulman--2017-0000.rkt")
   (include-part "Rijke--2017-0000.rkt")
   (include-part "Rijke--Shulman--Spitters--2020-0000.rkt")
 ]

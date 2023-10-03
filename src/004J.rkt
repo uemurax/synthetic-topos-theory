@@ -15,5 +15,6 @@
     Let @(math X) be a subtopos.
     Then the lex modality @(math (modality X))
     is accessible.
+    (This might require additional axioms.)
   }
 ]

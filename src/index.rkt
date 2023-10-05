@@ -18,6 +18,7 @@
     }
   ]
   #:description abstract
+  (include-part "004S.rkt")
   (include-part "0000.rkt")
   (include-part "001T.rkt")
   (include-part "0039.rkt")

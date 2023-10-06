@@ -38,6 +38,6 @@
     (include-part "term-index.rkt")
     (include-part "notation-index.rkt")
     (include-part "bibliography.rkt")
-    (include-part "trash.rkt")
+    ;(include-part "trash.rkt")
   ]
 ]

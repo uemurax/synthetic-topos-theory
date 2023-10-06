@@ -37,7 +37,7 @@
     that has universes of @emph{étale types}.
     Although it has standard type constructors for convenience,
     the most relevant ones are
-    finite limits of étale types,
+    limits,
     colimits of étale types,
     and exponentials by étale types.
   }
@@ -45,8 +45,11 @@
     The type theory of sheaves on @(math X)
     (@ref["0028"]) is again a base type theory.
     This means that
-    we have the type theory of spaces
-    @emph{in the type theory of sheaves on @(math X)}.
+    we have the topical type theory
+    whose base type theory is
+    the type theory of sheaves on @(math X).
+    So, the topical type theory is somehow
+    a @emph{coinductive} family of type theories.
   }
   @paragraph{
     We need some axioms

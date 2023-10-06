@@ -8,6 +8,10 @@
   @paragraph{
     In @ref["0000"],
     we review the @math{2}-category of toposes.
+    This section is not needed for the rest
+    but gives some intuitions
+    for the design of axioms
+    for synthetic topos theory.
   }
   @paragraph{
     @ref["001T"] is the core of the document.

@@ -53,12 +53,11 @@
     Having in mind the fact that
     every topos classifies
     models of a @emph{geometric theory},
-    we think of the type theory of toposes
-    as a @emph{logical framework} for geometric theories.
-    Every type (topos) in the type theory of toposes
-    is read as a geometric theory,
-    and we introduce the @emph{type theory of sheaves} on the topos
-    which is a type theory
+    we regard every type (topos)
+    in the type theory of toposes
+    as a geometric theory
+    and introduce the @emph{type theory of sheaves}
+    on the topos which is a type theory
     equipped with a @emph{generic model}
     of the geometric theory.
     In this way,

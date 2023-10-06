@@ -65,4 +65,7 @@
     we have access to the internal languages
     of all toposes within a single system.
   }
+  #:subsections @list[
+    (include-part "004T.rkt")
+  ]
 ]

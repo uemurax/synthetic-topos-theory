@@ -1,5 +1,7 @@
 #lang morg
 
+(define me @%{Taichi Uemura})
+
 (define abstract
   @%{
     @emph{Synthetic topos theory} is the study of toposes
@@ -9,11 +11,19 @@
 @document[
   #:id (current-id)
   #:author @list[
-    @%{Taichi Uemura}
+    me
   ]
   #:title @%{Synthetic topos theory}
   #:contents @%[
     @paragraph{
+      © 2023 @|me|
+    }
+    @paragraph{
+      This work is licensed under a
+      @href["https://creativecommons.org/licenses/by/4.0/"]{Creative Commons Attribution 4.0 International License}.
+    }
+    @paragraph{
+      Abstract:
       @|abstract|
     }
   ]

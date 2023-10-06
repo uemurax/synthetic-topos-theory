@@ -2,12 +2,6 @@
 
 (define me @%{Taichi Uemura})
 
-(define abstract
-  @%{
-    @emph{Synthetic topos theory} is the study of toposes
-    by means of the synthetic method.
-  })
-
 @document[
   #:id (current-id)
   #:author @list[
@@ -24,10 +18,15 @@
     }
     @paragraph{
       Abstract:
-      @|abstract|
+      We propose a type theory
+      in which topos theory is
+      developed synthetically.
     }
   ]
-  #:description abstract
+  #:description @%{
+    @emph{Synthetic topos theory} is the study of toposes
+    by means of the synthetic method.
+  }
   (include-part "004S.rkt")
   (include-part "0000.rkt")
   (include-part "001T.rkt")

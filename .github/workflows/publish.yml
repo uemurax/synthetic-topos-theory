@@ -44,6 +44,6 @@ jobs:
           target_branch: gh-pages
           build_dir: _site
           jekyll: false
-          dry_run: ${{ ! ((github.ref_type == "branch") && (github.ref_name == "main")) }}
+          dry_run: ${{ ! ((github.ref_type == 'branch') && (github.ref_name == 'main')) }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

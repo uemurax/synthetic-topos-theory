@@ -17,6 +17,9 @@
       @href["https://creativecommons.org/licenses/by/4.0/"]{Creative Commons Attribution 4.0 International License}.
     }
     @paragraph{
+      Repository: @href["https://github.com/uemurax/synthetic-topos-theory"]
+    }
+    @paragraph{
       Abstract:
       We propose a type theory
       in which topos theory is

@@ -17,6 +17,7 @@
   (include-part "0002.rkt")
   (include-part "000E.rkt")
   (include-part "0003.rkt")
+  (include-part "004Y.rkt")
   (include-part "0006.rkt")
   @paragraph{
     Logoses are usually defined as

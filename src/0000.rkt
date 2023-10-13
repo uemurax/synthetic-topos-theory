@@ -26,6 +26,7 @@
     Having small presentations
     can be replaced by compactness.
   }
+  (include-part "004Z.rkt")
   (include-part "0004.rkt")
   (include-part "0005.rkt")
   (include-part "0018.rkt")

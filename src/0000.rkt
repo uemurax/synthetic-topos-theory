@@ -12,6 +12,7 @@
     and then define the @math{2}-category of toposes
     to be its opposite.
   }
+  (include-part "004X.rkt")
   (include-part "0001.rkt")
   (include-part "0002.rkt")
   (include-part "000E.rkt")

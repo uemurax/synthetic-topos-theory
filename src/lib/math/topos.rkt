@@ -5,6 +5,7 @@
          (prefix-in tex: "base/tex.rkt")
          "base/star.rkt"
          "base/const.rkt"
+         "base/point.rkt"
          "base/apply.rkt")
 
 (provide Topos
@@ -32,8 +33,6 @@
 
 (define object-classifier
   @tex:mathbb{A})
-
-(define pt tex:bullet)
 
 (define object-classifier-pt
   (object-classifier . _ . pt))

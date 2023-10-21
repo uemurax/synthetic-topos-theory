@@ -7,6 +7,7 @@
          "function.rkt")
 
 (provide Space
+         Topos
          generic-global-section
          space->space)
 
@@ -17,6 +18,8 @@
 
 (define (generic-global-section [S : MathTeX+Like])
   (@const{w} . _ . S))
+
+(define Topos @universe-style{T})
 
 (define (universe [i : MathTeX+Like])
   (@universe-style{V} . $ . i))

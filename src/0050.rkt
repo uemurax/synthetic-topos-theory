@@ -29,6 +29,8 @@
             (Rep-pt C)
             (Rep C)))
     for the universal representable map
-    of presheaves on @(math C).
+    of presheaves on @(math C);
+    see Definition 5.2 of
+    @ref["Nguyen--Uemura--2022-0000"].
   }
 ]

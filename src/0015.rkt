@@ -70,6 +70,11 @@
   (include-part "0034.rkt")
   (include-part "0035.rkt")
   (include-part "0036.rkt")
+  @paragraph{
+    @(math (Topos1 U)) itself
+    appears in @(math (ShTopos U V))
+    as a universe.
+  }
   (include-part "0050.rkt")
   (include-part "0051.rkt")
 ]

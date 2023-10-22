@@ -53,26 +53,8 @@
   (include-part "0054.rkt")
   (include-part "0055.rkt")
   (include-part "0032.rkt")
-  (include-part "0030.rkt")
-  (include-part "0031.rkt")
-  @paragraph{
-    If the functor
-    @(math ((tuple C X) . /-> . (C . action-l . X)))
-    preserved colimits on each variable,
-    then it determined
-    a complete and cocomplete @math{2}-category structure.
-    However, it seems not to preserve
-    colimits on variable @(math C).
-    We still have a @math{2}-category structure
-    among those objects who
-    “believe that the functor
-    @(math ((tuple C X) . /-> . (C . action-l . X)))
-    preserves colimits on variable @(math C)”.
-  }
-  (include-part "0033.rkt")
   (include-part "0034.rkt")
   (include-part "0035.rkt")
-  (include-part "0036.rkt")
   @paragraph{
     @(math (Topos1 U)) itself
     appears in @(math (ShTopos U V))

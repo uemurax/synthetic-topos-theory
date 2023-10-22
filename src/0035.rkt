@@ -3,6 +3,7 @@
 (require "lib/article/exercise.rkt"
          morg/math
          "lib/math/topos.rkt"
+         "lib/math/topos-2.rkt"
          "lib/math/category.rkt")
 
 (define U "U")
@@ -17,12 +18,10 @@
     greater than or equal to @(math U),
     and let @(math W) be a universe
     strictly greater than @(math V).
-    Then the morphism
-    @(math ((object-classifier^-pr V)
-            . is-morphism .
-            (object-classifier^-pt V)
-            (object-classifier^ V)))
-    in @(math (ShTopos U W))
-    is a categorical fibration.
+    Then
+    @(math ((object-classifier^-pt V)
+            . is-object .
+            ((ShTopos U W) . slice . (object-classifier^ V))))
+    is @(math interval)-categorically fibrant.
   }
 ]

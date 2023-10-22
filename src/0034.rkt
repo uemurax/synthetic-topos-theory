@@ -3,6 +3,7 @@
 (require "lib/article/exercise.rkt"
          morg/math
          "lib/math/topos.rkt"
+         "lib/math/topos-2.rkt"
          "lib/math/category.rkt")
 
 (define U "U")
@@ -21,6 +22,6 @@
     @(math ((object-classifier^ V)
             . is-object .
             (ShTopos U W)))
-    is categorically fibrant.
+    is @(math interval)-categorically fibrant.
   }
 ]

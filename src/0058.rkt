@@ -27,5 +27,8 @@
     to be the type of
     (non-strictly) increasing sequences
     in @(math interval) of length @(math n).
+    Face maps and degeneracy maps
+    between @(math (std-simplex n))'s
+    can also be defined.
   }
 ]

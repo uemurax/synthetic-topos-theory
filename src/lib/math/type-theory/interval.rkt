@@ -9,6 +9,8 @@
 
 (provide interval
          std-simplex
+         face^
+         degen^
          <=-symbol
          <=
          bottom

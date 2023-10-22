@@ -49,6 +49,7 @@
     @math{2}-categorical structure of
     @(math (Topos U)).
   }
+  (include-part "0053.rkt")
   (include-part "0030.rkt")
   (include-part "0031.rkt")
   @paragraph{

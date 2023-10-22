@@ -18,10 +18,11 @@
     greater than or equal to @(math U),
     and let @(math W) be a universe
     strictly greater than @(math V).
-    Then
-    @(math ((object-classifier^-pt V)
-            . is-object .
-            ((ShTopos U W) . slice . (object-classifier^ V))))
-    is @(math interval)-categorically fibrant.
+    Then the morphism
+    @(math ((object-classifier^-pr V)
+            . is-morphism .
+            (object-classifier^-pt V)
+            (object-classifier^ V)))
+    is a @(math interval)-left fibration.
   }
 ]

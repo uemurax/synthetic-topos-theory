@@ -24,7 +24,7 @@
     with least and greatest elements.
     We say a morphism in @(math C) is
     a @dfn{@(math I)-left fibration}
-    if it is right orthogonal to
+    if it is internally right orthogonal to
     @(math (@face^{1}
             . is-morphism .
             (std-simplex-poset I "0")

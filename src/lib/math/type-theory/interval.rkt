@@ -3,10 +3,12 @@
 (require morg/math
          (prefix-in tex: morg/math/tex)
          "../base/const.rkt"
+         "../simplicial.rkt"
          (prefix-in l: "../base/level.rkt")
          (prefix-in tex: "../base/tex.rkt"))
 
 (provide interval
+         std-simplex
          <=-symbol
          <=
          bottom

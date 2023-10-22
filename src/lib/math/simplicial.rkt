@@ -6,11 +6,20 @@
          (prefix-in l: "base/level.rkt"))
 
 (provide std-simplex
+         std-simplex-poset
          face^
          degen^)
 
 (define (std-simplex [n : MathTeX+Like])
   (tex:Delta
+   . (apply-with-parens #:left tex:lbrack
+                        #:right tex:rbrack
+                        #:level l:$) .
+   n))
+
+(define (std-simplex-poset [I : MathTeX+Like]
+                           [n : MathTeX+Like])
+  ((tex:Delta . _ . I)
    . (apply-with-parens #:left tex:lbrack
                         #:right tex:rbrack
                         #:level l:$) .

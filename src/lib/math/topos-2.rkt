@@ -1,8 +1,13 @@
 #lang at-exp typed/racket
 
-(require "base/const.rkt")
+(require "base/const.rkt"
+         morg/math)
 
-(provide cat->topos)
+(provide cat->topos
+         interval)
 
 (define cat->topos
-  @const{I})
+  @const{Q})
+
+(define interval
+  @(macro-1 "mathbb"){I})

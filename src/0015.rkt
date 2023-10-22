@@ -53,6 +53,7 @@
   (include-part "0054.rkt")
   (include-part "0055.rkt")
   (include-part "0032.rkt")
+  (include-part "005A.rkt")
   (include-part "0034.rkt")
   (include-part "0035.rkt")
   @paragraph{

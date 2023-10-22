@@ -52,6 +52,7 @@
   (include-part "0053.rkt")
   (include-part "0054.rkt")
   (include-part "0055.rkt")
+  (include-part "0032.rkt")
   (include-part "0030.rkt")
   (include-part "0031.rkt")
   @paragraph{
@@ -68,7 +69,6 @@
     @(math ((tuple C X) . /-> . (C . action-l . X)))
     preserves colimits on variable @(math C)”.
   }
-  (include-part "0032.rkt")
   (include-part "0033.rkt")
   (include-part "0034.rkt")
   (include-part "0035.rkt")

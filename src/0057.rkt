@@ -52,6 +52,9 @@
       @list-item{
         @(math top) is the greatest element.
       }
+      @list-item{
+        @(math bottom) and @(math top) are distinct.
+      }
     ]
   }
 ]

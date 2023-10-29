@@ -12,6 +12,7 @@
   unary
   $
   *
+  +
   binary
   relation
   /->

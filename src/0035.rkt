@@ -3,6 +3,7 @@
 (require "lib/article/exercise.rkt"
          morg/math
          "lib/math/topos.rkt"
+         "lib/math/topos-2.rkt"
          "lib/math/category.rkt")
 
 (define U "U")
@@ -22,7 +23,6 @@
             . is-morphism .
             (object-classifier^-pt V)
             (object-classifier^ V)))
-    in @(math (ShTopos U W))
-    is a categorical fibration.
+    is a @(math interval)-left fibration.
   }
 ]

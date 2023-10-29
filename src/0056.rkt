@@ -2,26 +2,26 @@
 
 (require "lib/article/exercise.rkt"
          morg/math
+         "lib/math/representable-map.rkt"
          "lib/math/topos.rkt"
          "lib/math/topos-2.rkt"
          "lib/math/category.rkt")
 
 (define U "U")
 (define V "V")
-(define W "W")
 
 @exercise[
   #:id (current-id)
   @paragraph{
-    Let @(math U) be a universe,
-    let @(math V) be a universe
-    greater than or equal to @(math U),
-    and let @(math W) be a universe
-    strictly greater than @(math V).
+    Let @(math U) be a universe
+    and let @(math V) be a universe
+    strictly greater than @(math U).
     Then
-    @(math ((object-classifier^ V)
+    @(math ((Rep-pt (Topos1 U))
             . is-object .
-            (ShTopos U W)))
+            ((ShTopos U V)
+             . slice .
+             (Rep (Topos1 U)))))
     is @(math interval)-categorically fibrant.
   }
 ]

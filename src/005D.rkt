@@ -5,8 +5,7 @@
          (prefix-in l: "lib/math/type-theory/universe-level.rkt")
          "lib/math/type-theory/etale.rkt"
          "lib/math/type-theory/function.rkt"
-         "lib/math/type-theory/interval.rkt"
-         "lib/math/type-theory/tuple.rkt"
+         "lib/math/type-theory/directed.rkt"
          "lib/math/type-theory/element.rkt")
 
 (define T "T")
@@ -29,13 +28,13 @@
     Let @(math (l:is-Level i)).
     Then @(math (Etale i))
     satisfies @dfn{directed univalence}.
-    That is, the canonical function
+    That is,
+    for any @(math (A B . is-elem* . (Etale i))),
+    the canonical function
     @disp{
-      @(math (((std-simplex "1") . -> . (Etale i))
+      @(math ((paren (A . hom . B))
               . -> .
-              (* (A . is-elem . (Etale i))
-                 (B . is-elem . (Etale i))
-                 (A . -> . B))))
+              (paren (A . -> . B))))
     }
     induced by the axiom that
     @(math ((X . is-elem . (Etale i)) . /-> . X))

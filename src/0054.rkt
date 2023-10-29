@@ -9,6 +9,8 @@
          "lib/math/topos.rkt"
          "lib/math/function.rkt"
          "lib/math/category.rkt"
+         "lib/math/coproduct.rkt"
+         "lib/math/equiv.rkt"
          "lib/math/arithmetic.rkt")
 
 (define U "U")
@@ -46,6 +48,15 @@
                 (cat->topos . $ . @std-simplex{0})
                 (cat->topos . $ . @std-simplex{1})))
         determines the greatest element of @(math interval).
+      }
+      @list-item{
+        @(math ((+)
+                . equiv .
+                ((cat->topos . $ . @std-simplex{0})
+                 . ((cat->topos . $ . @face^{1})
+                    . _*_ .
+                    (cat->topos . $ . @face^{0})) .
+                 (cat->topos . $ . @std-simplex{0}))))
       }
       @list-item{
         Let @(math (n . >= . "3")) be an integer.

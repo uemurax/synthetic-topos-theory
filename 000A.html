@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html><head prefix="og: https://ogp.me/ns#"><meta charset="UTF-8"></meta><meta name="viewport" content="width=device-width,initial-scale=1"></meta><title>Étale morphisms -- Synthetic topos theory</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous"></link><meta property="og:title" content="Étale morphisms"></meta><meta property="og:site_name" content="Synthetic topos theory"></meta><meta property="og:type" content="article"></meta><meta property="og:url" content="https://uemurax.github.io/000A.html"></meta><meta name="description" content="*Synthetic topos theory* is the study of toposes
+by means of the synthetic method."></meta><meta property="og:description" content="*Synthetic topos theory* is the study of toposes
+by means of the synthetic method."></meta><script defer="true" src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js" integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t" crossorigin="anonymous"></script><script defer="true" src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script><script>document.addEventListener("DOMContentLoaded", function() {
+  const elems = document.getElementsByClassName('morg-generated-katex');
+  for(let i = 0; i < elems.length; i++) {
+    renderMathInElement(elems[i], {
+      delimiters: [
+        {left: '\\(',
+         right: '\\)',
+         display: false}
+      ]
+    });
+  }
+});</script><link rel="stylesheet" href="default.css"></link><link rel="stylesheet" href="topos.css"></link></head><body><div id="morg-generated-default-body-container"><div id="morg-generated-default-header"><button id="morg-generated-default-side-button" onclick="morg_generated_default_toggle_side_nav();">☰</button><script>function morg_generated_default_toggle_side_nav() {
+  console.log('called.');
+  let e = document.getElementById('morg-generated-default-side-nav');
+  console.log(e);
+  if (e.style.display == "none") {
+    e.style.display = "block";
+  }
+  else {
+    e.style.display = "none";
+  }
+}</script><a class="morg-generated-default-site-title" href="index.html">Synthetic topos theory</a></div><nav id="morg-generated-default-side-nav" style="display: none;"><ol class="morg-generated-document-toc"><li class="morg-generated-document-front-toc"><div class="morg-generated-toc"><ul class="morg-generated-toc-node"></ul></div></li><li class="morg-generated-document-main-toc"><div class="morg-generated-toc"><ul class="morg-generated-toc-node"><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="004S.html">Introduction</a></summary><ul class="morg-generated-toc-node"><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="004T.html">Structure</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="004U.html">Status</a></summary><ul class="morg-generated-toc-node"></ul></details></li></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details" open="true"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0000.html">Logoses and toposes</a></summary><ul class="morg-generated-toc-node"><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary-selected"><a class="morg-generated-toc-edge-title" href="000A.html">Étale morphisms</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="001L.html">A universal property of <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U)\)</span></a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0015.html">Sheaves on <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U)\)</span></a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="004C.html">Internal topos theory</a></summary><ul class="morg-generated-toc-node"></ul></details></li></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="001T.html">Topical type theory</a></summary><ul class="morg-generated-toc-node"><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="001U.html">Universe levels</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="001Y.html">Core type theory</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0022.html">Base type theory</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0024.html">Internal type theories</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0027.html">Type theory of spaces</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0028.html">Type theory of sheaves</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="002V.html">Cross-theory axioms</a></summary><ul class="morg-generated-toc-node"></ul></details></li></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0039.html">Topos theory</a></summary><ul class="morg-generated-toc-node"><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="003D.html">Classifying spaces</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="003A.html">The category of sheaves</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="003H.html">Inverse images</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="003J.html">Direct images</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="004V.html">Étale toposes</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="003O.html">Essential morphisms</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="004G.html">Subtoposes and modalities</a></summary><ul class="morg-generated-toc-node"></ul></details></li></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="003V.html">The topos of types</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="004M.html">The topos of propositions</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0042.html">Linear orders and simplicial types</a></summary><ul class="morg-generated-toc-node"></ul></details></li></ul></div></li><li class="morg-generated-document-back-toc"><div class="morg-generated-toc"><ul class="morg-generated-toc-node"><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="term-index.html">Index</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="notation-index.html">Notation index</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="bibliography.html">Bibliography</a></summary><ul class="morg-generated-toc-node"></ul></details></li></ul></div></li></ol></nav><div id="morg-generated-default-main-container"><div class="morg-generated-default-main-container"><nav><ol class="morg-generated-breadcrumb"><li class="morg-generated-breadcumrb-top"><a class="morg-generated-id" href="index.html">[index]</a></li><li class="morg-generated-breadcrumb-node"><a class="morg-generated-id" href="0000.html">[0000]</a></li><li class="morg-generated-breadcrumb-node"><a class="morg-generated-id" href="000A.html">[000A]</a></li></ol></nav><main><section class="morg-generated-section"><h1 class="morg-generated-section-title"><a class="morg-generated-id" href="000A.html">[000A]</a> Étale morphisms</h1><div class="morg-generated-section-body"><p class="morg-generated-paragraph"><em class="morg-generated-emph">Étale morphisms</em> play the central role
+in topos theory.
+They are defined in terms of slice categories.</p><p class="morg-generated-paragraph">Recall that
+slices of lex categories
+coclassify global sections.</p><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000B.html">[000B]</a> <span class="morg-generated-statement-header-header">Definition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(C\)</span> be a category
+that has finite limits
+and let <span class="morg-generated-katex">\(x:C\)</span> be an object.
+Let <span class="morg-generated-katex">\({x}^{*}:C\rightarrow C/x\)</span>
+denote the pullback functor along
+the morphism from <span class="morg-generated-katex">\(x\)</span> to the final object.
+We define a morphism in <span class="morg-generated-katex">\(C/x\)</span>
+<center class="morg-generated-display"><span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {d}}}_{x}:\mathord {\textnormal {\textsf {1}}}\rightarrow {x}^{*}(x)\)</span></center>
+to be the one represented by the diagonal morphism
+<span class="morg-generated-katex">\(x\rightarrow x\times x\)</span>
+in <span class="morg-generated-katex">\(C\)</span>.</p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000C.html">[000C]</a> <span class="morg-generated-statement-header-header">Exercise</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(C\)</span> be a category
+that has finite limits
+and let <span class="morg-generated-katex">\(x:C\)</span> be an object.
+Then the pair <span class="morg-generated-katex">\(({x}^{*},\mathord {\textnormal {\textsf {d}}}_{x})\)</span>
+has the following universal property:
+For any category <span class="morg-generated-katex">\(D\)</span> that has finite limits,
+the functor
+<center class="morg-generated-display"><span class="morg-generated-katex">\(G\mapsto (G\circ {x}^{*},G(\mathord {\textnormal {\textsf {d}}}_{x})):\mathord {\textnormal {\textsf {Lex}}}(C/x,D)\rightarrow (F:\mathord {\textnormal {\textsf {Lex}}}(C,D))\times (\mathord {\textnormal {\textsf {1}}}\rightarrow F(x))\)</span></center>
+is an equivalence.
+Moreover, the inverse of this functor
+at <span class="morg-generated-katex">\((F,u)\)</span> is
+<span class="morg-generated-katex">\({u}^{*}\circ (F/x)\)</span>.</p></div></div></article><p class="morg-generated-paragraph">The same is true for lex cocomplete categories.</p><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000D.html">[000D]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe,
+let <span class="morg-generated-katex">\(C\)</span> be a lex <span class="morg-generated-katex">\(U\)</span>-cocomplete category,
+and let <span class="morg-generated-katex">\(x:C\)</span> be an object.
+Then the pair <span class="morg-generated-katex">\(({x}^{*},\mathord {\textnormal {\textsf {d}}}_{x})\)</span>
+has the following universal property:
+For any lex <span class="morg-generated-katex">\(U\)</span>-cocomplete category <span class="morg-generated-katex">\(D\)</span>,
+the equivalence given in <a class="morg-generated-id" href="000C.html">[000C]</a>
+restricts to an equivalence
+<center class="morg-generated-display"><span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {LexCocomp}}}_{U}(C/x,D)\simeq (F:\mathord {\textnormal {\textsf {LexCocomp}}}_{U}(C,D))\times (\mathord {\textnormal {\textsf {1}}}\rightarrow F(x))\)</span>.</center></p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">This follows from the fact that,
+for any lex <span class="morg-generated-katex">\(U\)</span>-cocomplete category <span class="morg-generated-katex">\(C\)</span>
+and any morphism <span class="morg-generated-katex">\(u:x\rightarrow y\)</span>
+in <span class="morg-generated-katex">\(C\)</span>,
+the pullback functor
+<span class="morg-generated-katex">\({u}^{*}:C/y\rightarrow C/x\)</span>
+is a morphism of lex <span class="morg-generated-katex">\(U\)</span>-cocomplete categories.</p></div></details></article><p class="morg-generated-paragraph">There is a <em class="morg-generated-emph">generic</em> slice category.</p><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000F.html">[000F]</a> <span class="morg-generated-statement-header-header">Definition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe.
+We define <span class="morg-generated-katex">\({\langle \mathord {\textnormal {\textsf {w}}}\rangle }_{\mathord {\textnormal {\textsf {LexCocomp}}}_{U}}\)</span>
+to be the free lex <span class="morg-generated-katex">\(U\)</span>-cocomplete category
+generated by one object <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {w}}}\)</span>.
+That is, for any lex <span class="morg-generated-katex">\(U\)</span>-cocomplete category <span class="morg-generated-katex">\(C\)</span>,
+the functor
+<center class="morg-generated-display"><span class="morg-generated-katex">\(F\mapsto F(\mathord {\textnormal {\textsf {w}}}):\mathord {\textnormal {\textsf {LexCocomp}}}_{U}({\langle \mathord {\textnormal {\textsf {w}}}\rangle }_{\mathord {\textnormal {\textsf {LexCocomp}}}_{U}},C)\rightarrow C\)</span></center>
+is an equivalence.</p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000G.html">[000G]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe,
+let <span class="morg-generated-katex">\(V\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(U\)</span>,
+let <span class="morg-generated-katex">\(C\)</span> be a <span class="morg-generated-katex">\(V\)</span>-small lex <span class="morg-generated-katex">\(U\)</span>-cocomplete category,
+and let <span class="morg-generated-katex">\(x:C\)</span> be an object.
+Let <span class="morg-generated-katex">\(F:{\langle \mathord {\textnormal {\textsf {w}}}\rangle }_{\mathord {\textnormal {\textsf {LexCocomp}}}_{U}}\rightarrow C\)</span>
+denote the morphism of lex <span class="morg-generated-katex">\(U\)</span>-cocomplete categories
+corresponding to <span class="morg-generated-katex">\(x\)</span>.
+Then <span class="morg-generated-katex">\({x}^{*}:C\rightarrow C/x\)</span>
+is the pushout in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {LexCocomp}}}(U,V)\)</span>
+of <span class="morg-generated-katex">\({\mathord {\textnormal {\textsf {w}}}}^{*}:{\langle \mathord {\textnormal {\textsf {w}}}\rangle }_{\mathord {\textnormal {\textsf {LexCocomp}}}_{U}}\rightarrow {\langle \mathord {\textnormal {\textsf {w}}}\rangle }_{\mathord {\textnormal {\textsf {LexCocomp}}}_{U}}/\mathord {\textnormal {\textsf {w}}}\)</span>
+along <span class="morg-generated-katex">\(F\)</span>.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">One can check the universal property of the pushout
+using <a class="morg-generated-id" href="000D.html">[000D]</a>.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000H.html">[000H]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe
+and let <span class="morg-generated-katex">\(V\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(U\)</span>.
+Then the morphism
+<span class="morg-generated-katex">\({\mathord {\textnormal {\textsf {w}}}}^{*}:{\langle \mathord {\textnormal {\textsf {w}}}\rangle }_{\mathord {\textnormal {\textsf {LexCocomp}}}_{U}}\rightarrow {\langle \mathord {\textnormal {\textsf {w}}}\rangle }_{\mathord {\textnormal {\textsf {LexCocomp}}}_{U}}/\mathord {\textnormal {\textsf {w}}}\)</span>
+in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {LexCocomp}}}(U,V)\)</span>
+is coexponentiable.
+That is, the pushout functor along
+<span class="morg-generated-katex">\({\mathord {\textnormal {\textsf {w}}}}^{*}\)</span>
+has a left adjoint.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">By <a class="morg-generated-id" href="000G.html">[000G]</a>,
+the pushout along <span class="morg-generated-katex">\({\mathord {\textnormal {\textsf {w}}}}^{*}\)</span>
+is computed by slicing.
+Since slicing commutes with limits
+and since the pushout functor commutes with colimits,
+the adjoint functor theorem applies.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000X.html">[000X]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe
+and let <span class="morg-generated-katex">\(V\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(U\)</span>.
+Then the morphism
+<span class="morg-generated-katex">\({\mathord {\textnormal {\textsf {w}}}}^{*}:{\langle \mathord {\textnormal {\textsf {w}}}\rangle }_{\mathord {\textnormal {\textsf {LexCocomp}}}_{U}}\rightarrow {\langle \mathord {\textnormal {\textsf {w}}}\rangle }_{\mathord {\textnormal {\textsf {LexCocomp}}}_{U}}/\mathord {\textnormal {\textsf {w}}}\)</span>
+in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {LexCocomp}}}(U,V)\)</span>
+is a co-left-fibration.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">This follows from <a class="morg-generated-id" href="000D.html">[000D]</a> because,
+for any lex <span class="morg-generated-katex">\(U\)</span>-cocomplete category <span class="morg-generated-katex">\(C\)</span>,
+the projection
+<span class="morg-generated-katex">\((F:\mathord {\textnormal {\textsf {LexCocomp}}}_{U}({\langle \mathord {\textnormal {\textsf {w}}}\rangle }_{\mathord {\textnormal {\textsf {LexCocomp}}}_{U}},C))\times (\mathord {\textnormal {\textsf {1}}}\rightarrow F(\mathord {\textnormal {\textsf {w}}}))\rightarrow \mathord {\textnormal {\textsf {LexCocomp}}}_{U}({\langle \mathord {\textnormal {\textsf {w}}}\rangle }_{\mathord {\textnormal {\textsf {LexCocomp}}}_{U}},C)\)</span>
+is a left fibration.</p></div></details></article><p class="morg-generated-paragraph">A morphism of logoses is <em class="morg-generated-emph">étale</em> if
+it is equivalent to
+<span class="morg-generated-katex">\({x}^{*}:C\rightarrow C/x\)</span>
+for some <span class="morg-generated-katex">\(x\)</span>.
+We see that <span class="morg-generated-katex">\(x\)</span> is unique.</p><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="0010.html">[0010]</a> <span class="morg-generated-statement-header-header">Definition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe,
+let <span class="morg-generated-katex">\(V\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(U\)</span>,
+and let <span class="morg-generated-katex">\(C\)</span> be a <span class="morg-generated-katex">\(V\)</span>-small
+lex <span class="morg-generated-katex">\(U\)</span>-cocomplete category.
+We define a functor
+<center class="morg-generated-display"><span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {E}}}_{C}:{C}^{\mathord {\textnormal {\textsf {op}}}}\rightarrow \mathord {\textnormal {\textsf {LexCocomp}}}(U,V)\backslash C\)</span></center>
+by <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {E}}}_{C}(x)=({x}^{*}:C\rightarrow C/x)\)</span>.</p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000I.html">[000I]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe,
+let <span class="morg-generated-katex">\(V\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(U\)</span>,
+and let <span class="morg-generated-katex">\(C\)</span> be a <span class="morg-generated-katex">\(V\)</span>-small
+lex <span class="morg-generated-katex">\(U\)</span>-cocomplete category.
+The functor
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {E}}}_{C}:{C}^{\mathord {\textnormal {\textsf {op}}}}\rightarrow \mathord {\textnormal {\textsf {LexCocomp}}}(U,V)\backslash C\)</span>
+is fully faithful.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(x,y:C\)</span> be objects.
+By <a class="morg-generated-id" href="000D.html">[000D]</a>,
+the category of morphisms
+<span class="morg-generated-katex">\({y}^{*}\rightarrow {x}^{*}\)</span>
+in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {LexCocomp}}}(U,V)\backslash C\)</span>
+is equivalent to
+the discrete category of morphisms
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {1}}}\rightarrow {x}^{*}(y)\)</span>
+in <span class="morg-generated-katex">\(C/x\)</span>.
+But the latter is equivalent to
+the discrete category of morphisms
+<span class="morg-generated-katex">\(x\rightarrow y\)</span> in <span class="morg-generated-katex">\(C\)</span>.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="0011.html">[0011]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe,
+let <span class="morg-generated-katex">\(V\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(U\)</span>,
+and let <span class="morg-generated-katex">\(C\)</span> be a <span class="morg-generated-katex">\(V\)</span>-small
+lex <span class="morg-generated-katex">\(U\)</span>-cocomplete category.
+Then the functor
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {E}}}_{C}:{C}^{\mathord {\textnormal {\textsf {op}}}}\rightarrow \mathord {\textnormal {\textsf {LexCocomp}}}(U,V)\backslash C\)</span>
+preserves <span class="morg-generated-katex">\(U\)</span>-small limits.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">Observe that limits in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {LexCocomp}}}(U,V)\)</span>
+are computed in the category of <span class="morg-generated-katex">\(V\)</span>-small categories.
+Then the claim is a consequence of descent.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000V.html">[000V]</a> <span class="morg-generated-statement-header-header">Definition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe
+and let <span class="morg-generated-katex">\(V\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(U\)</span>.
+We say a morphism
+<span class="morg-generated-katex">\(f:C\rightarrow D\)</span>
+in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {LexCocomp}}}(U,V)\)</span> is
+<dfn class="morg-generated-dfn">étale</dfn> if
+it is in the image of the functor
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {E}}}_{C}:{C}^{\mathord {\textnormal {\textsf {op}}}}\rightarrow \mathord {\textnormal {\textsf {LexCocomp}}}(U,V)\backslash C\)</span>.</p></div></div></article><p class="morg-generated-paragraph">Let us reverse morphisms.</p><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000K.html">[000K]</a> <span class="morg-generated-statement-header-header">Definition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe.
+We define a morphism
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {p}}}:\mathbb {A}_{\bullet }\rightarrow \mathbb {A}\)</span>
+in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}(U)\)</span>
+to be the one sent by <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Sh}}}\)</span> to
+<span class="morg-generated-katex">\({\mathord {\textnormal {\textsf {w}}}}^{*}:{\langle \mathord {\textnormal {\textsf {w}}}\rangle }_{\mathord {\textnormal {\textsf {LexCocomp}}}_{U}}\rightarrow {\langle \mathord {\textnormal {\textsf {w}}}\rangle }_{\mathord {\textnormal {\textsf {LexCocomp}}}_{U}}/\mathord {\textnormal {\textsf {w}}}\)</span>.</p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000Z.html">[000Z]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe.
+Then <span class="morg-generated-katex">\(\mathbb {A}\)</span>
+represents the functor
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Sh}}}:{(\mathord {\textnormal {\textsf {Topos}}}(U))}^{\mathord {\textnormal {\textsf {op}}}}\rightarrow \mathord {\textnormal {\textsf {Logos}}}(U)\)</span>.
+That is, we have a natural equivalence
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Hom}}}_{\mathord {\textnormal {\textsf {Topos}}}(U)}(X,\mathbb {A})\simeq \mathord {\textnormal {\textsf {Sh}}}(X)\)</span>.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">This is by definition.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000L.html">[000L]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe.
+Then the morphism
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {p}}}:\mathbb {A}_{\bullet }\rightarrow \mathbb {A}\)</span>
+in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}(U)\)</span> is exponentiable.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">By <a class="morg-generated-id" href="000H.html">[000H]</a>.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000Y.html">[000Y]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe.
+Then the morphism
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {p}}}:\mathbb {A}_{\bullet }\rightarrow \mathbb {A}\)</span>
+in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}(U)\)</span>
+is a left fibration.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">By <a class="morg-generated-id" href="000X.html">[000X]</a>.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000M.html">[000M]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe.
+Then the morphism
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {p}}}:\mathbb {A}_{\bullet }\rightarrow \mathbb {A}\)</span>
+in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}(U)\)</span>
+satisfies directed univalence.
+That is,
+for any object <span class="morg-generated-katex">\(X:\mathord {\textnormal {\textsf {Topos}}}(U)\)</span>,
+the functor
+<center class="morg-generated-display"><span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Hom}}}_{\mathord {\textnormal {\textsf {Topos}}}(U)}(X,\mathbb {A})\rightarrow \mathord {\textnormal {\textsf {Topos}}}(U)/X\)</span></center>
+defined by the pullback of the left fibration
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {p}}}:\mathbb {A}_{\bullet }\rightarrow \mathbb {A}\)</span>
+is fully faithful.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">By <a class="morg-generated-id" href="000I.html">[000I]</a>.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000N.html">[000N]</a> <span class="morg-generated-statement-header-header">Definition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe.
+We say a morphism
+<span class="morg-generated-katex">\(f:Y\rightarrow X\)</span>
+in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}(U)\)</span> is <dfn class="morg-generated-dfn">étale</dfn> if
+there exists a (necessarily unique by <a class="morg-generated-id" href="000M.html">[000M]</a>)
+pullback square from <span class="morg-generated-katex">\(f\)</span> to
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {p}}}:\mathbb {A}_{\bullet }\rightarrow \mathbb {A}\)</span>.</p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000S.html">[000S]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe.
+Then étale morphisms in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}(U)\)</span>
+are closed under pullback.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">This is by definition.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000P.html">[000P]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe.
+Then a morphism <span class="morg-generated-katex">\(f:Y\rightarrow X\)</span>
+in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}(U)\)</span> is étale if and only if
+the morphism of lex <span class="morg-generated-katex">\(U\)</span>-cocomplete categories
+<span class="morg-generated-katex">\({f}^{*}:\mathord {\textnormal {\textsf {Sh}}}(X)\rightarrow \mathord {\textnormal {\textsf {Sh}}}(Y)\)</span>
+is étale.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">By <a class="morg-generated-id" href="000G.html">[000G]</a>.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000Q.html">[000Q]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe.
+Then all the identity morphisms in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}(U)\)</span>
+are étale.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(X\)</span> be a <span class="morg-generated-katex">\(U\)</span>-topos.
+We have the equivalence
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Sh}}}(X)\simeq \mathord {\textnormal {\textsf {Sh}}}(X)/\mathord {\textnormal {\textsf {1}}}\)</span>.
+Then <a class="morg-generated-id" href="000P.html">[000P]</a> applies.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000R.html">[000R]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe.
+Then étale morphisms in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}(U)\)</span>
+are closed under composition.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(X\)</span> be a <span class="morg-generated-katex">\(U\)</span>-topos,
+let <span class="morg-generated-katex">\(a:\mathord {\textnormal {\textsf {Sh}}}(X)\)</span> be an object,
+and let <span class="morg-generated-katex">\(s:\mathord {\textnormal {\textsf {Sh}}}(X)/a\)</span>
+be an object.
+Let <span class="morg-generated-katex">\(u:b\rightarrow a\)</span>
+denote the morphism that represents <span class="morg-generated-katex">\(s\)</span>.
+We have the equivalence
+<span class="morg-generated-katex">\((\mathord {\textnormal {\textsf {Sh}}}(X)/a)/s\simeq \mathord {\textnormal {\textsf {Sh}}}(X)/b\)</span>.
+Then <a class="morg-generated-id" href="000P.html">[000P]</a> applies.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000T.html">[000T]</a> <span class="morg-generated-statement-header-header">Lemma</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe.
+Then étale morphisms in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}(U)\)</span>
+has the left cancellation property.
+That is, for morphisms
+<span class="morg-generated-katex">\(f:Y\rightarrow X\)</span>
+and <span class="morg-generated-katex">\(g:Z\rightarrow Y\)</span> in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}(U)\)</span>,
+if <span class="morg-generated-katex">\(f\)</span> and <span class="morg-generated-katex">\(f\circ g\)</span> are étale,
+then so is <span class="morg-generated-katex">\(g\)</span>.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(X\)</span> be a <span class="morg-generated-katex">\(U\)</span>-topos,
+let <span class="morg-generated-katex">\(a,b:\mathord {\textnormal {\textsf {Sh}}}(X)\)</span>
+be objects,
+and let
+<span class="morg-generated-katex">\(F:\mathord {\textnormal {\textsf {Sh}}}(X)/a\rightarrow \mathord {\textnormal {\textsf {Sh}}}(X)/b\)</span>
+be a morphism in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Logos}}}(U)\backslash \mathord {\textnormal {\textsf {Sh}}}(X)\)</span>.
+By <a class="morg-generated-id" href="000I.html">[000I]</a>,
+<span class="morg-generated-katex">\(F\)</span> is equivalent to the pullback functor
+<span class="morg-generated-katex">\({u}^{*}\)</span>
+for some morphism <span class="morg-generated-katex">\(u:b\rightarrow a\)</span>.
+Let <span class="morg-generated-katex">\(s:\mathord {\textnormal {\textsf {Sh}}}(X)/a\)</span>
+be the object represented by <span class="morg-generated-katex">\(u\)</span>.
+We have the equivalence
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Sh}}}(X)/b\simeq (\mathord {\textnormal {\textsf {Sh}}}(X)/a)/s\)</span>.
+Then <a class="morg-generated-id" href="000P.html">[000P]</a> applies.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000U.html">[000U]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe.
+Then étale morphisms in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}(U)\)</span>
+are closed under diagonal.
+That is, if a morphism
+<span class="morg-generated-katex">\(f:Y\rightarrow X\)</span>
+in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}(U)\)</span> is étale,
+then so is the diagonal morphism
+<span class="morg-generated-katex">\(Y\rightarrow Y\mathbin {{}_{f}\mathord {\times _{f}}}Y\)</span>.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">The diagonal morphism in question is
+a section of the first (or second)
+projection <span class="morg-generated-katex">\(Y\mathbin {{}_{f}\mathord {\times _{f}}}Y\rightarrow Y\)</span>.
+By <a class="morg-generated-id" href="000T.html">[000T]</a> and <a class="morg-generated-id" href="000Q.html">[000Q]</a>,
+it suffices to show that
+the first projection is étale,
+but this follows from <a class="morg-generated-id" href="000S.html">[000S]</a>.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="000W.html">[000W]</a> <span class="morg-generated-statement-header-header">Definition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe
+and let <span class="morg-generated-katex">\(X\)</span> be a <span class="morg-generated-katex">\(U\)</span>-topos.
+We define <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Etale}}}(X)\)</span>
+to be the full subcategory of
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}(U)/X\)</span>
+spanned by the étale morphisms with codomain <span class="morg-generated-katex">\(X\)</span>.</p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="0012.html">[0012]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe
+and let <span class="morg-generated-katex">\(X\)</span> be a <span class="morg-generated-katex">\(U\)</span>-topos.
+Then the functor
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {E}}}_{\mathord {\textnormal {\textsf {Sh}}}(X)}:{(\mathord {\textnormal {\textsf {Sh}}}(X))}^{\mathord {\textnormal {\textsf {op}}}}\rightarrow \mathord {\textnormal {\textsf {Logos}}}(U)\backslash \mathord {\textnormal {\textsf {Sh}}}(X)\)</span>
+restricts to an equivalence
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Sh}}}(X)\simeq \mathord {\textnormal {\textsf {Etale}}}(X)\)</span>.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">By definition.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="0013.html">[0013]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe.
+Then, for any <span class="morg-generated-katex">\(U\)</span>-topos <span class="morg-generated-katex">\(X\)</span>,
+the category
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Etale}}}(X)\)</span> has <span class="morg-generated-katex">\(U\)</span>-small colimits.
+Moreover, for any morphism
+<span class="morg-generated-katex">\(f:X\rightarrow Y\)</span>
+in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}(U)\)</span>,
+the pullback functor
+<span class="morg-generated-katex">\({f}^{*}:\mathord {\textnormal {\textsf {Etale}}}(Y)\rightarrow \mathord {\textnormal {\textsf {Etale}}}(X)\)</span>
+commutes with <span class="morg-generated-katex">\(U\)</span>-small colimits.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">By <a class="morg-generated-id" href="0012.html">[0012]</a>.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="0014.html">[0014]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe
+and let <span class="morg-generated-katex">\(X\)</span> be a <span class="morg-generated-katex">\(U\)</span>-topos.
+Then the inclusion
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Etale}}}(X)\rightarrow \mathord {\textnormal {\textsf {Topos}}}(U)/X\)</span>
+preserves <span class="morg-generated-katex">\(U\)</span>-small colimits.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">By <a class="morg-generated-id" href="0011.html">[0011]</a>.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="0017.html">[0017]</a> <span class="morg-generated-statement-header-header">Definition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe,
+let <span class="morg-generated-katex">\(I\)</span> be a <span class="morg-generated-katex">\(U\)</span>-small category,
+and let <span class="morg-generated-katex">\(X:I\rightarrow \mathord {\textnormal {\textsf {Topos}}}(U)\)</span>
+be a functor.
+Suppose that <span class="morg-generated-katex">\(X\)</span> factors through
+the domain projection
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Etale}}}(Y)\rightarrow \mathord {\textnormal {\textsf {Topos}}}(U)\)</span>
+for some <span class="morg-generated-katex">\(U\)</span>-topos <span class="morg-generated-katex">\(Y\)</span>.
+By <a class="morg-generated-id" href="0013.html">[0013]</a> and <a class="morg-generated-id" href="0014.html">[0014]</a>,
+the colimit of <span class="morg-generated-katex">\(X\)</span> exists.
+We call colimits obtained in this way
+<dfn class="morg-generated-dfn">étale colimits</dfn>.
+Limits in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Logos}}}(U)\)</span>
+that are étale colimits in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}(U)\)</span>
+are called <dfn class="morg-generated-dfn">étale limits</dfn>.</p></div></div></article></div><nav class="morg-generated-section-toc"><div class="morg-generated-toc"><ul class="morg-generated-toc-node"></ul></div></nav></section></main><nav><ol class="morg-generated-d-pad"><li class="morg-generated-d-pad-up"><a href="0000.html">↑</a></li><li class="morg-generated-d-pad-next"><a href="001L.html">→</a></li></ol></nav></div></div></div></body></html>

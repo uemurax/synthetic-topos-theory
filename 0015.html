@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html><head prefix="og: https://ogp.me/ns#"><meta charset="UTF-8"></meta><meta name="viewport" content="width=device-width,initial-scale=1"></meta><title>Sheaves on <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U)\)</span> -- Synthetic topos theory</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous"></link><meta property="og:title" content="Sheaves on \(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U)\)"></meta><meta property="og:site_name" content="Synthetic topos theory"></meta><meta property="og:type" content="article"></meta><meta property="og:url" content="https://uemurax.github.io/0015.html"></meta><meta name="description" content="*Synthetic topos theory* is the study of toposes
+by means of the synthetic method."></meta><meta property="og:description" content="*Synthetic topos theory* is the study of toposes
+by means of the synthetic method."></meta><script defer="true" src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js" integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t" crossorigin="anonymous"></script><script defer="true" src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script><script>document.addEventListener("DOMContentLoaded", function() {
+  const elems = document.getElementsByClassName('morg-generated-katex');
+  for(let i = 0; i < elems.length; i++) {
+    renderMathInElement(elems[i], {
+      delimiters: [
+        {left: '\\(',
+         right: '\\)',
+         display: false}
+      ]
+    });
+  }
+});</script><link rel="stylesheet" href="default.css"></link><link rel="stylesheet" href="topos.css"></link></head><body><div id="morg-generated-default-body-container"><div id="morg-generated-default-header"><button id="morg-generated-default-side-button" onclick="morg_generated_default_toggle_side_nav();">☰</button><script>function morg_generated_default_toggle_side_nav() {
+  console.log('called.');
+  let e = document.getElementById('morg-generated-default-side-nav');
+  console.log(e);
+  if (e.style.display == "none") {
+    e.style.display = "block";
+  }
+  else {
+    e.style.display = "none";
+  }
+}</script><a class="morg-generated-default-site-title" href="index.html">Synthetic topos theory</a></div><nav id="morg-generated-default-side-nav" style="display: none;"><ol class="morg-generated-document-toc"><li class="morg-generated-document-front-toc"><div class="morg-generated-toc"><ul class="morg-generated-toc-node"></ul></div></li><li class="morg-generated-document-main-toc"><div class="morg-generated-toc"><ul class="morg-generated-toc-node"><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="004S.html">Introduction</a></summary><ul class="morg-generated-toc-node"><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="004T.html">Structure</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="004U.html">Status</a></summary><ul class="morg-generated-toc-node"></ul></details></li></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details" open="true"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0000.html">Logoses and toposes</a></summary><ul class="morg-generated-toc-node"><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="000A.html">Étale morphisms</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="001L.html">A universal property of <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U)\)</span></a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary-selected"><a class="morg-generated-toc-edge-title" href="0015.html">Sheaves on <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U)\)</span></a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="004C.html">Internal topos theory</a></summary><ul class="morg-generated-toc-node"></ul></details></li></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="001T.html">Topical type theory</a></summary><ul class="morg-generated-toc-node"><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="001U.html">Universe levels</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="001Y.html">Core type theory</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0022.html">Base type theory</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0024.html">Internal type theories</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0027.html">Type theory of spaces</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0028.html">Type theory of sheaves</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="002V.html">Cross-theory axioms</a></summary><ul class="morg-generated-toc-node"></ul></details></li></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0039.html">Topos theory</a></summary><ul class="morg-generated-toc-node"><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="003D.html">Classifying spaces</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="003A.html">The category of sheaves</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="003H.html">Inverse images</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="003J.html">Direct images</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="004V.html">Étale toposes</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="003O.html">Essential morphisms</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="004G.html">Subtoposes and modalities</a></summary><ul class="morg-generated-toc-node"></ul></details></li></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="003V.html">The topos of types</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="004M.html">The topos of propositions</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0042.html">Linear orders and simplicial types</a></summary><ul class="morg-generated-toc-node"></ul></details></li></ul></div></li><li class="morg-generated-document-back-toc"><div class="morg-generated-toc"><ul class="morg-generated-toc-node"><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="term-index.html">Index</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="notation-index.html">Notation index</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="bibliography.html">Bibliography</a></summary><ul class="morg-generated-toc-node"></ul></details></li></ul></div></li></ol></nav><div id="morg-generated-default-main-container"><div class="morg-generated-default-main-container"><nav><ol class="morg-generated-breadcrumb"><li class="morg-generated-breadcumrb-top"><a class="morg-generated-id" href="index.html">[index]</a></li><li class="morg-generated-breadcrumb-node"><a class="morg-generated-id" href="0000.html">[0000]</a></li><li class="morg-generated-breadcrumb-node"><a class="morg-generated-id" href="0015.html">[0015]</a></li></ol></nav><main><section class="morg-generated-section"><h1 class="morg-generated-section-title"><a class="morg-generated-id" href="0015.html">[0015]</a> Sheaves on <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U)\)</span></h1><div class="morg-generated-section-body"><p class="morg-generated-paragraph">The category <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U)\)</span>
+is type-theoretically not nice
+because it is not locally cartesian closed.
+We consider embedding it into
+a logos (in a larger universe).</p><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="0016.html">[0016]</a> <span class="morg-generated-statement-header-header">Definition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe
+and let <span class="morg-generated-katex">\(V\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(U\)</span>.
+We say a presheaf
+<span class="morg-generated-katex">\(A:{(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U))}^{\mathord {\textnormal {\textsf {op}}}}\rightarrow V\)</span>
+is a <dfn class="morg-generated-dfn">sheaf</dfn> if
+it takes étale colimits in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U)\)</span>
+to limits in <span class="morg-generated-katex">\(V\)</span>.</p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="0019.html">[0019]</a> <span class="morg-generated-statement-header-header">Definition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe
+and let <span class="morg-generated-katex">\(V\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(U\)</span>.
+We define <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Sh}}}(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U),V)\)</span>
+to be the full subcategory of
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Fun}}}({(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U))}^{\mathord {\textnormal {\textsf {op}}}},V)\)</span>
+spanned by the sheaves
+in the sense of <a class="morg-generated-id" href="0016.html">[0016]</a>.</p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="001A.html">[001A]</a> <span class="morg-generated-statement-header-header">Exercise</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe
+and let <span class="morg-generated-katex">\(V\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(U\)</span>.
+Then <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Sh}}}(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U),V)\)</span> is a <span class="morg-generated-katex">\(V\)</span>-logos.</p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="001B.html">[001B]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe
+and let <span class="morg-generated-katex">\(V\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(U\)</span>.
+Then the Yoneda embedding
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U)\rightarrow \mathord {\textnormal {\textsf {Fun}}}({(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U))}^{\mathord {\textnormal {\textsf {op}}}},V)\)</span>
+factors through <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Sh}}}(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U),V)\)</span>.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">This is because
+representable presheaves preserve
+arbitrary limits.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="001C.html">[001C]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe
+and let <span class="morg-generated-katex">\(V\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(U\)</span>.
+Then the Yoneda embedding
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U)\rightarrow \mathord {\textnormal {\textsf {Sh}}}(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U),V)\)</span>
+preserves finite limits and
+<span class="morg-generated-katex">\(U\)</span>-small products.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">This is because
+the Yoneda embedding
+preserves arbitrary limits.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="001D.html">[001D]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe
+and let <span class="morg-generated-katex">\(V\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(U\)</span>.
+Then the Yoneda embedding
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U)\rightarrow \mathord {\textnormal {\textsf {Sh}}}(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U),V)\)</span>
+takes étale colimits to colimits.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">This follows from the Yoneda lemma
+and the definition of sheaves on <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U)\)</span>.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="002Z.html">[002Z]</a> <span class="morg-generated-statement-header-header">Exercise</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe
+and let <span class="morg-generated-katex">\(V\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(U\)</span>.
+Then the Yoneda embedding
+exhibits <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Sh}}}(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U),V)\)</span>
+as the completion of <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U)\)</span>
+under <span class="morg-generated-katex">\(V\)</span>-small colimits
+preserving étale colimits.</p></div></div></article><p class="morg-generated-paragraph">The object <span class="morg-generated-katex">\(\mathbb {A}\)</span>
+in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U)\)</span>
+classifies <span class="morg-generated-katex">\(U\)</span>-small sheaves
+by <a class="morg-generated-id" href="000Z.html">[000Z]</a>.
+In <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Sh}}}(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U),V)\)</span>,
+we can construct objects
+that classify <em class="morg-generated-emph">large</em> sheaves.</p><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="001E.html">[001E]</a> <span class="morg-generated-statement-header-header">Definition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe,
+let <span class="morg-generated-katex">\(V\)</span> be a universe
+greater than or equal to <span class="morg-generated-katex">\(U\)</span>,
+and let <span class="morg-generated-katex">\(W\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(V\)</span>.
+The forgetful functor
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {LexCocomp}}}(V,W)\rightarrow \mathord {\textnormal {\textsf {LexCocomp}}}(U,W)\)</span>
+has a left adjoint.
+This left adjoint takes
+<span class="morg-generated-katex">\(U\)</span>-compact objects in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {LexCocomp}}}(U,W)\)</span>
+to <span class="morg-generated-katex">\(V\)</span>-compact objects in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {LexCocomp}}}(V,W)\)</span>
+and thus induces a functor
+<span class="morg-generated-katex">\(C\mapsto \mathop {\Uparrow ^{V}}C:\mathord {\textnormal {\textsf {Logos}}}(U)\rightarrow \mathord {\textnormal {\textsf {Logos}}}(V)\)</span>.
+For a <span class="morg-generated-katex">\(U\)</span>-logos <span class="morg-generated-katex">\(C\)</span>,
+the <span class="morg-generated-katex">\(V\)</span>-logos <span class="morg-generated-katex">\(\mathop {\Uparrow ^{V}}C\)</span>
+is called the
+<dfn class="morg-generated-dfn"><span class="morg-generated-katex">\(V\)</span>-enlargement of <span class="morg-generated-katex">\(C\)</span></dfn>.
+Notice that the choice of <span class="morg-generated-katex">\(W\)</span> does not matter.</p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="001F.html">[001F]</a> <span class="morg-generated-statement-header-header">Exercise</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe
+and let <span class="morg-generated-katex">\(V\)</span> be a universe
+greater than or equal to <span class="morg-generated-katex">\(U\)</span>.
+For any <span class="morg-generated-katex">\(U\)</span>-logos <span class="morg-generated-katex">\(C\)</span>,
+the unit <span class="morg-generated-katex">\(C\rightarrow \mathop {\Uparrow ^{V}}C\)</span>,
+which is a morphism in
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {LexCocomp}}}(U,W)\)</span>
+for some universe <span class="morg-generated-katex">\(W\)</span>
+strictly greater than <span class="morg-generated-katex">\(V\)</span>,
+is fully faithful.
+We thus regard <span class="morg-generated-katex">\(C\)</span>
+as a full subcategory of <span class="morg-generated-katex">\(\mathop {\Uparrow ^{V}}C\)</span>.</p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="001G.html">[001G]</a> <span class="morg-generated-statement-header-header">Exercise</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe
+and let <span class="morg-generated-katex">\(V\)</span> be a universe
+greater than or equal to <span class="morg-generated-katex">\(U\)</span>.
+Then the functor
+<span class="morg-generated-katex">\(C\mapsto \mathop {\Uparrow ^{V}}C:\mathord {\textnormal {\textsf {Logos}}}(U)\rightarrow \mathord {\textnormal {\textsf {Logos}}}(V)\)</span>
+preserves étale morphisms.
+More precisely, for any <span class="morg-generated-katex">\(U\)</span>-logos <span class="morg-generated-katex">\(C\)</span>
+and any object <span class="morg-generated-katex">\(A:C\)</span>,
+the embedding
+<span class="morg-generated-katex">\(C/A\rightarrow \mathop {\Uparrow ^{V}}C/A\)</span>
+induces an equivalence
+<span class="morg-generated-katex">\(\mathop {\Uparrow ^{V}}(C/A)\simeq \mathop {\Uparrow ^{V}}C/A\)</span>.</p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="001H.html">[001H]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe
+and let <span class="morg-generated-katex">\(V\)</span> be a universe
+greater than or equal to <span class="morg-generated-katex">\(U\)</span>.
+Then the functor
+<span class="morg-generated-katex">\(C\mapsto \mathop {\Uparrow ^{V}}C:\mathord {\textnormal {\textsf {Logos}}}(U)\rightarrow \mathord {\textnormal {\textsf {Logos}}}(V)\)</span>
+takes étale limits in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Logos}}}(U)\)</span>
+to étale limits in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Logos}}}(V)\)</span>.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(C\)</span> be a <span class="morg-generated-katex">\(U\)</span>-logos,
+let <span class="morg-generated-katex">\(I\)</span> be a <span class="morg-generated-katex">\(U\)</span>-small category,
+and let <span class="morg-generated-katex">\(A:I\rightarrow C\)</span>
+be a functor.
+Let <span class="morg-generated-katex">\(B:C\)</span>
+denote the colimit of <span class="morg-generated-katex">\(A\)</span>.
+By <a class="morg-generated-id" href="0011.html">[0011]</a>,
+the étale limit of the diagram induced by <span class="morg-generated-katex">\(A\)</span>
+is <span class="morg-generated-katex">\(C/B\)</span>.
+Then apply <a class="morg-generated-id" href="001G.html">[001G]</a>.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="001I.html">[001I]</a> <span class="morg-generated-statement-header-header">Definition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe,
+let <span class="morg-generated-katex">\(V\)</span> be a universe
+greater than or equal to <span class="morg-generated-katex">\(U\)</span>,
+and let <span class="morg-generated-katex">\(W\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(V\)</span>.
+We define presheaves
+<center class="morg-generated-display"><span class="morg-generated-katex">\(\mathbb {A}^{(V)},\mathbb {A}_{\bullet }^{(V)}:{(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U))}^{\mathord {\textnormal {\textsf {op}}}}\rightarrow W\)</span></center>
+by
+<center class="morg-generated-display"><span class="morg-generated-katex">\(\mathbb {A}^{(V)}(X)=\mathord {\textnormal {\textsf {Obj}}}(\mathop {\Uparrow ^{V}}(\mathord {\textnormal {\textsf {Sh}}}(X)))\)</span>
+and
+<span class="morg-generated-katex">\(\mathbb {A}_{\bullet }^{(V)}(X)=\mathord {\textnormal {\textsf {Obj}}}(\mathop {\Uparrow ^{V}}(\mathord {\textnormal {\textsf {Sh}}}(X))\backslash \mathord {\textnormal {\textsf {1}}})\)</span>.</center>
+We also define a morphism
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {p}}}^{(V)}:\mathbb {A}_{\bullet }^{(V)}\rightarrow \mathbb {A}^{(V)}\)</span>
+by the codomain projection.</p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="001J.html">[001J]</a> <span class="morg-generated-statement-header-header">Proposition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe,
+let <span class="morg-generated-katex">\(V\)</span> be a universe
+greater than or equal to <span class="morg-generated-katex">\(U\)</span>,
+and let <span class="morg-generated-katex">\(W\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(W\)</span>.
+Then the presheaves
+<span class="morg-generated-katex">\(\mathbb {A}^{(V)},\mathbb {A}_{\bullet }^{(V)}:{(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U))}^{\mathord {\textnormal {\textsf {op}}}}\rightarrow W\)</span>
+are sheaves.</p></div></div><details class="morg-generated-proof"><summary class="morg-generated-proof-header">Proof</summary><div class="morg-generated-proof-body"><p class="morg-generated-paragraph"><span class="morg-generated-katex">\(\mathbb {A}^{(V)}\)</span>
+is a sheaf by <a class="morg-generated-id" href="001H.html">[001H]</a>.
+<span class="morg-generated-katex">\(\mathbb {A}_{\bullet }^{(V)}\)</span>
+is a sheaf because
+coslicing commutes with limits.</p></div></details></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="001K.html">[001K]</a> <span class="morg-generated-statement-header-header">Exercise</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe,
+let <span class="morg-generated-katex">\(V\)</span> be a universe
+greater than or equal to <span class="morg-generated-katex">\(U\)</span>,
+and let <span class="morg-generated-katex">\(W\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(V\)</span>.
+Then the morphism
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {p}}}^{(V)}:\mathbb {A}_{\bullet }^{(V)}\rightarrow \mathbb {A}^{(V)}\)</span>
+in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Sh}}}(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U),W)\)</span>
+is univalent.</p></div></div></article><p class="morg-generated-paragraph">We can restore part of the
+<span class="morg-generated-katex">\(2\)</span>-categorical structure of
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}(U)\)</span>.</p><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="0053.html">[0053]</a> <span class="morg-generated-statement-header-header">Definition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe.
+We define a functor
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Q}}}:\mathord {\textnormal {\textsf {Cat}}}(U)\rightarrow \mathord {\textnormal {\textsf {Topos}}}(U)\)</span>
+by
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Q}}}(C)=C\bullet \mathord {\textnormal {\textsf {1}}}\)</span>.</p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="0054.html">[0054]</a> <span class="morg-generated-statement-header-header">Exercise</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe.
+<ul class="morg-generated-unordered-list" style="list-style-type: none;"><li class="morg-generated-list-item"><span class="morg-generated-list-item-head">-</span><span class="morg-generated-katex">\((\mathord {\textnormal {\textsf {Q}}}(\mathord {\textnormal {\textsf {s}}}^{1}),\mathord {\textnormal {\textsf {Q}}}(\mathord {\textnormal {\textsf {s}}}^{0})):\mathord {\textnormal {\textsf {Q}}}(\Delta \lbrack 2\rbrack )\rightarrow \mathord {\textnormal {\textsf {Q}}}(\Delta \lbrack 1\rbrack )\times \mathord {\textnormal {\textsf {Q}}}(\Delta \lbrack 1\rbrack )\)</span>
+determines a partial order
+in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}(U)\)</span>.
+We refer to this partially ordered object
+in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}(U)\)</span>
+as <span class="morg-generated-katex">\(\mathbb {I}\)</span>.</li><li class="morg-generated-list-item"><span class="morg-generated-list-item-head">-</span><span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Q}}}(\mathord {\textnormal {\textsf {d}}}^{1}):\mathord {\textnormal {\textsf {Q}}}(\Delta \lbrack 0\rbrack )\rightarrow \mathord {\textnormal {\textsf {Q}}}(\Delta \lbrack 1\rbrack )\)</span>
+determines the least element of <span class="morg-generated-katex">\(\mathbb {I}\)</span>.</li><li class="morg-generated-list-item"><span class="morg-generated-list-item-head">-</span><span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Q}}}(\mathord {\textnormal {\textsf {d}}}^{0}):\mathord {\textnormal {\textsf {Q}}}(\Delta \lbrack 0\rbrack )\rightarrow \mathord {\textnormal {\textsf {Q}}}(\Delta \lbrack 1\rbrack )\)</span>
+determines the greatest element of <span class="morg-generated-katex">\(\mathbb {I}\)</span>.</li><li class="morg-generated-list-item"><span class="morg-generated-list-item-head">-</span><span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {0}}}\simeq \mathord {\textnormal {\textsf {Q}}}(\Delta \lbrack 0\rbrack )\mathbin {{}_{\mathord {\textnormal {\textsf {Q}}}(\mathord {\textnormal {\textsf {d}}}^{1})}\mathord {\times _{\mathord {\textnormal {\textsf {Q}}}(\mathord {\textnormal {\textsf {d}}}^{0})}}}\mathord {\textnormal {\textsf {Q}}}(\Delta \lbrack 0\rbrack )\)</span></li><li class="morg-generated-list-item"><span class="morg-generated-list-item-head">-</span>Let <span class="morg-generated-katex">\(n\ge 3\)</span> be an integer.
+Then the morphism
+<center class="morg-generated-display"><span class="morg-generated-katex">\((\mathord {\textnormal {\textsf {Q}}}(\mathord {\textnormal {\textsf {s}}}^{n-1}),{(\mathord {\textnormal {\textsf {Q}}}(\mathord {\textnormal {\textsf {s}}}^{0}))}^{n-2}):\mathord {\textnormal {\textsf {Q}}}(\Delta \lbrack n\rbrack )\rightarrow \mathord {\textnormal {\textsf {Q}}}(\Delta \lbrack n-1\rbrack )\mathbin {{}_{{(\mathord {\textnormal {\textsf {Q}}}(\mathord {\textnormal {\textsf {s}}}^{0}))}^{n-2}}\mathord {\times _{\mathord {\textnormal {\textsf {Q}}}(\mathord {\textnormal {\textsf {s}}}^{1})}}}\mathord {\textnormal {\textsf {Q}}}(\Delta \lbrack 2\rbrack )\)</span></center>
+is an equivalence.
+(This means that <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Q}}}(\Delta \lbrack n\rbrack )\)</span>
+is the object of
+increasing sequences in <span class="morg-generated-katex">\(\mathbb {I}\)</span>
+of length <span class="morg-generated-katex">\(n\)</span>).</li></ul></p></div></div></article><p class="morg-generated-paragraph">One can also show that
+<span class="morg-generated-katex">\(\mathbb {I}\)</span> is totally ordered
+in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}(U)\)</span>,
+but that property would not be preserved
+by the embedding
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}(U)\rightarrow \mathord {\textnormal {\textsf {Sh}}}(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U),V)\)</span>.</p><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="0055.html">[0055]</a> <span class="morg-generated-statement-header-header">Definition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe,
+let <span class="morg-generated-katex">\(C\)</span> be a <span class="morg-generated-katex">\(U\)</span>-logos,
+let <span class="morg-generated-katex">\(I\)</span> be a
+partially ordered object in <span class="morg-generated-katex">\(C\)</span>,
+and let <span class="morg-generated-katex">\(n\)</span> be a natural number.
+We define <span class="morg-generated-katex">\(\Delta _{I}\lbrack n\rbrack \)</span>
+to be the object in <span class="morg-generated-katex">\(C\)</span>
+that classifies (non-strictly) increasing sequences
+in <span class="morg-generated-katex">\(I\)</span> of length <span class="morg-generated-katex">\(n\)</span>.
+When <span class="morg-generated-katex">\(I\)</span> has
+least and greatest elements,
+face maps and degeneracy maps
+between <span class="morg-generated-katex">\(\Delta _{I}\lbrack n\rbrack \)</span>'s
+can also be defined.</p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="0032.html">[0032]</a> <span class="morg-generated-statement-header-header">Definition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe,
+let <span class="morg-generated-katex">\(C\)</span> be a <span class="morg-generated-katex">\(U\)</span>-logos,
+and let <span class="morg-generated-katex">\(I\)</span> be a
+partially ordered object in <span class="morg-generated-katex">\(C\)</span>
+with least and greatest elements.
+We say an object in <span class="morg-generated-katex">\(C\)</span> is
+<dfn class="morg-generated-dfn"><span class="morg-generated-katex">\(I\)</span>-categorically fibrant</dfn>
+if it is internally local
+for the following morphisms.
+<ul class="morg-generated-unordered-list" style="list-style-type: none;"><li class="morg-generated-list-item"><span class="morg-generated-list-item-head">-</span><span class="morg-generated-katex">\((\mathord {\textnormal {\textsf {d}}}^{2},\mathord {\textnormal {\textsf {d}}}^{0}):\Delta _{I}\lbrack 1\rbrack \mathbin {{}_{\mathord {\textnormal {\textsf {d}}}^{0}}\mathord {+_{\mathord {\textnormal {\textsf {d}}}^{1}}}}\Delta _{I}\lbrack 1\rbrack \rightarrow \Delta _{I}\lbrack 2\rbrack \)</span></li><li class="morg-generated-list-item"><span class="morg-generated-list-item-head">-</span><span class="morg-generated-katex">\(\Delta _{I}\lbrack 3\rbrack \mathbin {{}_{(\mathord {\textnormal {\textsf {d}}}^{3}\circ \mathord {\textnormal {\textsf {d}}}^{1},\mathord {\textnormal {\textsf {d}}}^{0}\circ \mathord {\textnormal {\textsf {d}}}^{1})}\mathord {+_{\mathord {\textnormal {\textsf {s}}}^{0}+\mathord {\textnormal {\textsf {s}}}^{0}}}}(\Delta _{I}\lbrack 0\rbrack +\Delta _{I}\lbrack 0\rbrack )\rightarrow \Delta _{I}\lbrack 0\rbrack \)</span></li><li class="morg-generated-list-item"><span class="morg-generated-list-item-head">-</span><span class="morg-generated-katex">\(((\mathord {\textnormal {\textsf {s}}}^{0},\mathord {\textnormal {\textsf {s}}}^{1}),(\mathord {\textnormal {\textsf {s}}}^{1},\mathord {\textnormal {\textsf {s}}}^{0})):\Delta _{I}\lbrack 2\rbrack \mathbin {{}_{\mathord {\textnormal {\textsf {d}}}^{1}}\mathord {+_{\mathord {\textnormal {\textsf {d}}}^{1}}}}\Delta _{I}\lbrack 2\rbrack \rightarrow \Delta _{I}\lbrack 1\rbrack \times \Delta _{I}\lbrack 1\rbrack \)</span></li></ul></p></div></div></article><p class="morg-generated-paragraph">The locality for the first two morphisms
+in <a class="morg-generated-id" href="0032.html">[0032]</a> is the
+<em class="morg-generated-emph">Segal condition</em>
+and the <em class="morg-generated-emph">Rezk condition</em>, respectively.
+We add the third morphism
+because <span class="morg-generated-katex">\(I\)</span> is not assumed to be
+totally ordered.
+Local objects for the third morphism
+“believe that <span class="morg-generated-katex">\(I\)</span> is totally ordered”.</p><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="005A.html">[005A]</a> <span class="morg-generated-statement-header-header">Definition</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe,
+let <span class="morg-generated-katex">\(C\)</span> be a <span class="morg-generated-katex">\(U\)</span>-logos,
+and let <span class="morg-generated-katex">\(I\)</span> be a
+partially ordered object in <span class="morg-generated-katex">\(C\)</span>
+with least and greatest elements.
+We say a morphism in <span class="morg-generated-katex">\(C\)</span> is
+a <dfn class="morg-generated-dfn"><span class="morg-generated-katex">\(I\)</span>-left fibration</dfn>
+if it is internally right orthogonal to
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {d}}}^{1}:\Delta _{I}\lbrack 0\rbrack \rightarrow \Delta _{I}\lbrack 1\rbrack \)</span>.</p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="0034.html">[0034]</a> <span class="morg-generated-statement-header-header">Exercise</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe,
+let <span class="morg-generated-katex">\(V\)</span> be a universe
+greater than or equal to <span class="morg-generated-katex">\(U\)</span>,
+and let <span class="morg-generated-katex">\(W\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(V\)</span>.
+Then
+<span class="morg-generated-katex">\(\mathbb {A}^{(V)}:\mathord {\textnormal {\textsf {Sh}}}(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U),W)\)</span>
+is <span class="morg-generated-katex">\(\mathbb {I}\)</span>-categorically fibrant.</p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="0035.html">[0035]</a> <span class="morg-generated-statement-header-header">Exercise</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe,
+let <span class="morg-generated-katex">\(V\)</span> be a universe
+greater than or equal to <span class="morg-generated-katex">\(U\)</span>,
+and let <span class="morg-generated-katex">\(W\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(V\)</span>.
+Then the morphism
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {p}}}^{(V)}:\mathbb {A}_{\bullet }^{(V)}\rightarrow \mathbb {A}^{(V)}\)</span>
+is a <span class="morg-generated-katex">\(\mathbb {I}\)</span>-left fibration.</p></div></div></article><p class="morg-generated-paragraph"><span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U)\)</span> itself
+appears in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Sh}}}(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U),V)\)</span>
+as a universe.</p><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="0050.html">[0050]</a> <span class="morg-generated-statement-header-header">Notation</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(C\)</span> be a lex category.
+We write
+<span class="morg-generated-katex">\(\rho (C):\mathord {\textnormal {\textsf {R}}}_{\bullet }(C)\rightarrow \mathord {\textnormal {\textsf {R}}}(C)\)</span>
+for the universal representable map
+of presheaves on <span class="morg-generated-katex">\(C\)</span>;
+see Definition 5.2 of
+<a class="morg-generated-id" href="Nguyen--Uemura--2022-0000.html">[Nguyen--Uemura--2022-0000]</a>.</p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="0051.html">[0051]</a> <span class="morg-generated-statement-header-header">Exercise</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe
+and let <span class="morg-generated-katex">\(V\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(U\)</span>.
+Then <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {R}}}(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U))\)</span>
+and <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {R}}}_{\bullet }(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U))\)</span>
+are in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Sh}}}(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U),V)\)</span>.</p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="0056.html">[0056]</a> <span class="morg-generated-statement-header-header">Exercise</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(U\)</span> be a universe
+and let <span class="morg-generated-katex">\(V\)</span> be a universe
+strictly greater than <span class="morg-generated-katex">\(U\)</span>.
+Then
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {R}}}_{\bullet }(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U)):\mathord {\textnormal {\textsf {Sh}}}(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U),V)/\mathord {\textnormal {\textsf {R}}}(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U))\)</span>
+is <span class="morg-generated-katex">\(\mathbb {I}\)</span>-categorically fibrant.</p></div></div></article></div><nav class="morg-generated-section-toc"><div class="morg-generated-toc"><ul class="morg-generated-toc-node"></ul></div></nav></section></main><nav><ol class="morg-generated-d-pad"><li class="morg-generated-d-pad-previous"><a href="001L.html">←</a></li><li class="morg-generated-d-pad-up"><a href="0000.html">↑</a></li><li class="morg-generated-d-pad-next"><a href="004C.html">→</a></li></ol></nav></div></div></div></body></html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html><head prefix="og: https://ogp.me/ns#"><meta charset="UTF-8"></meta><meta name="viewport" content="width=device-width,initial-scale=1"></meta><title>Cross-theory axioms -- Synthetic topos theory</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous"></link><meta property="og:title" content="Cross-theory axioms"></meta><meta property="og:site_name" content="Synthetic topos theory"></meta><meta property="og:type" content="article"></meta><meta property="og:url" content="https://uemurax.github.io/002V.html"></meta><meta name="description" content="*Synthetic topos theory* is the study of toposes
+by means of the synthetic method."></meta><meta property="og:description" content="*Synthetic topos theory* is the study of toposes
+by means of the synthetic method."></meta><script defer="true" src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js" integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t" crossorigin="anonymous"></script><script defer="true" src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script><script>document.addEventListener("DOMContentLoaded", function() {
+  const elems = document.getElementsByClassName('morg-generated-katex');
+  for(let i = 0; i < elems.length; i++) {
+    renderMathInElement(elems[i], {
+      delimiters: [
+        {left: '\\(',
+         right: '\\)',
+         display: false}
+      ]
+    });
+  }
+});</script><link rel="stylesheet" href="default.css"></link><link rel="stylesheet" href="topos.css"></link></head><body><div id="morg-generated-default-body-container"><div id="morg-generated-default-header"><button id="morg-generated-default-side-button" onclick="morg_generated_default_toggle_side_nav();">☰</button><script>function morg_generated_default_toggle_side_nav() {
+  console.log('called.');
+  let e = document.getElementById('morg-generated-default-side-nav');
+  console.log(e);
+  if (e.style.display == "none") {
+    e.style.display = "block";
+  }
+  else {
+    e.style.display = "none";
+  }
+}</script><a class="morg-generated-default-site-title" href="index.html">Synthetic topos theory</a></div><nav id="morg-generated-default-side-nav" style="display: none;"><ol class="morg-generated-document-toc"><li class="morg-generated-document-front-toc"><div class="morg-generated-toc"><ul class="morg-generated-toc-node"></ul></div></li><li class="morg-generated-document-main-toc"><div class="morg-generated-toc"><ul class="morg-generated-toc-node"><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="004S.html">Introduction</a></summary><ul class="morg-generated-toc-node"><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="004T.html">Structure</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="004U.html">Status</a></summary><ul class="morg-generated-toc-node"></ul></details></li></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0000.html">Logoses and toposes</a></summary><ul class="morg-generated-toc-node"><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="000A.html">Étale morphisms</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="001L.html">A universal property of <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U)\)</span></a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0015.html">Sheaves on <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Topos}}}^{(1)}(U)\)</span></a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="004C.html">Internal topos theory</a></summary><ul class="morg-generated-toc-node"></ul></details></li></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details" open="true"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="001T.html">Topical type theory</a></summary><ul class="morg-generated-toc-node"><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="001U.html">Universe levels</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="001Y.html">Core type theory</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0022.html">Base type theory</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0024.html">Internal type theories</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0027.html">Type theory of spaces</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0028.html">Type theory of sheaves</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary-selected"><a class="morg-generated-toc-edge-title" href="002V.html">Cross-theory axioms</a></summary><ul class="morg-generated-toc-node"></ul></details></li></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0039.html">Topos theory</a></summary><ul class="morg-generated-toc-node"><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="003D.html">Classifying spaces</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="003A.html">The category of sheaves</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="003H.html">Inverse images</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="003J.html">Direct images</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="004V.html">Étale toposes</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="003O.html">Essential morphisms</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="004G.html">Subtoposes and modalities</a></summary><ul class="morg-generated-toc-node"></ul></details></li></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="003V.html">The topos of types</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="004M.html">The topos of propositions</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="0042.html">Linear orders and simplicial types</a></summary><ul class="morg-generated-toc-node"></ul></details></li></ul></div></li><li class="morg-generated-document-back-toc"><div class="morg-generated-toc"><ul class="morg-generated-toc-node"><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="term-index.html">Index</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="notation-index.html">Notation index</a></summary><ul class="morg-generated-toc-node"></ul></details></li><li class="morg-generated-toc-edge"><details class="morg-generated-toc-edge-details"><summary class="morg-generated-toc-edge-summary"><a class="morg-generated-toc-edge-title" href="bibliography.html">Bibliography</a></summary><ul class="morg-generated-toc-node"></ul></details></li></ul></div></li></ol></nav><div id="morg-generated-default-main-container"><div class="morg-generated-default-main-container"><nav><ol class="morg-generated-breadcrumb"><li class="morg-generated-breadcumrb-top"><a class="morg-generated-id" href="index.html">[index]</a></li><li class="morg-generated-breadcrumb-node"><a class="morg-generated-id" href="001T.html">[001T]</a></li><li class="morg-generated-breadcrumb-node"><a class="morg-generated-id" href="002V.html">[002V]</a></li></ol></nav><main><section class="morg-generated-section"><h1 class="morg-generated-section-title"><a class="morg-generated-id" href="002V.html">[002V]</a> Cross-theory axioms</h1><div class="morg-generated-section-body"><p class="morg-generated-paragraph">We have introduced
+the type theory of spaces
+and the type theory of sheaves
+both of which are
+internal to a base type theory.
+Now we introduce some axioms
+that strongly tie these type theories together.</p><p class="morg-generated-paragraph">The first axiom (<a class="morg-generated-id" href="002S.html">[002S]</a>)
+is between the base type theory
+and the type theory of spaces.
+It asserts that types in the base type theory
+are equivalent to étale spaces.</p><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="002S.html">[002S]</a> <span class="morg-generated-statement-header-header">Axiom</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(T\)</span> be a base type theory.
+We work in <span class="morg-generated-katex">\(T\)</span>.
+Let <span class="morg-generated-katex">\(i:\mathord {\textnormal {\textsf {Level}}}\)</span>.
+<ul class="morg-generated-unordered-list" style="list-style-type: none;"><li class="morg-generated-list-item"><span class="morg-generated-list-item-head">-</span>The function
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {GS}}}_{\mathord {\textnormal {\textsf {Sp}}}}:\mathord {\textnormal {\textsf {GS}}}_{\mathord {\textnormal {\textsf {Sp}}}}(\mathcal {E}(i))\rightarrow \mathcal {U}(\mathord {\textnormal {\textsf {succ}}}(i))\)</span>
+factors through <span class="morg-generated-katex">\(\mathcal {U}(i)\)</span>.</li><li class="morg-generated-list-item"><span class="morg-generated-list-item-head">-</span>Let <span class="morg-generated-katex">\(A:\mathord {\textnormal {\textsf {GS}}}_{\mathord {\textnormal {\textsf {Sp}}}}(\mathcal {E}(i))\)</span>.
+Then the counit of the adjunction
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {C}}}_{\mathord {\textnormal {\textsf {Sp}}}}\dashv \mathord {\textnormal {\textsf {GS}}}_{\mathord {\textnormal {\textsf {Sp}}}}\)</span>
+at <span class="morg-generated-katex">\(A\)</span> is an equivalence.</li><li class="morg-generated-list-item"><span class="morg-generated-list-item-head">-</span>Let <span class="morg-generated-katex">\(A:\mathcal {U}(i)\)</span>.
+Then the unit of the adjunction
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {C}}}_{\mathord {\textnormal {\textsf {Sp}}}}\dashv \mathord {\textnormal {\textsf {GS}}}_{\mathord {\textnormal {\textsf {Sp}}}}\)</span>
+at <span class="morg-generated-katex">\(A\)</span> is an equivalence.</li></ul>
+In short,
+the adjunction <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {C}}}_{\mathord {\textnormal {\textsf {Sp}}}}\dashv \mathord {\textnormal {\textsf {GS}}}_{\mathord {\textnormal {\textsf {Sp}}}}\)</span>
+restricts to an equivalence
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {GS}}}_{\mathord {\textnormal {\textsf {Sp}}}}(\mathcal {E}(i))\simeq \mathcal {U}(i)\)</span>
+of categories.</p></div></div></article><p class="morg-generated-paragraph">The second axiom (<a class="morg-generated-id" href="005E.html">[005E]</a>)
+is between the base type theory
+and the type theory of sheaves on a topos.
+It asserts that a topos is
+to some extent determined by
+the category of sheaves on it.</p><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="005E.html">[005E]</a> <span class="morg-generated-statement-header-header">Axiom</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(T\)</span> be a base type theory.
+We work in <span class="morg-generated-katex">\(T\)</span>.
+Let <span class="morg-generated-katex">\(X\)</span> be a topos.
+Suppose that the functor
+<center class="morg-generated-display"><span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {C}}}_{\mathord {\textnormal {\textsf {Sh}}}(X)}:\mathcal {U}(0)\rightarrow \mathord {\textnormal {\textsf {GS}}}_{\mathord {\textnormal {\textsf {Sh}}}(X)}(\mathcal {U}(0))\)</span></center>
+is an equivalence of categories.
+Then <span class="morg-generated-katex">\(X\)</span> is contractible.</p></div></div></article><p class="morg-generated-paragraph"><a class="morg-generated-id" href="002S.html">[002S]</a> and <a class="morg-generated-id" href="005E.html">[005E]</a> are “too global”.
+For <a class="morg-generated-id" href="002S.html">[002S]</a>, what we really want is that
+étale type families on a topos <span class="morg-generated-katex">\(X\)</span>
+are equivalent to
+global types in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Sh}}}(X)\)</span>.
+For <a class="morg-generated-id" href="005E.html">[005E]</a>, what we really want is that
+a morphism between topose is an equivalence
+whenever its inverse image functor
+(introduced later in <a class="morg-generated-id" href="003I.html">[003I]</a>)
+is an equivalence of categories.
+Both are addressed by
+the third axiom (<a class="morg-generated-id" href="002Y.html">[002Y]</a>)
+which relates type theories of spaces
+in different base type theories.
+It asserts that
+spaces over a topos <span class="morg-generated-katex">\(X\)</span> are equivalent to
+spaces in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Sh}}}(X)\)</span>.
+By this axiom,
+relative stuff
+(e.g. type family on a topos <span class="morg-generated-katex">\(X\)</span>)
+is reduced to global stuff
+(e.g. global type) in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Sh}}}(X)\)</span>.
+Remember that <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Sh}}}(X)\)</span>
+is again a base type theory
+so <a class="morg-generated-id" href="002S.html">[002S]</a> and <a class="morg-generated-id" href="005E.html">[005E]</a>
+are also assumed there.</p><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="002W.html">[002W]</a> <span class="morg-generated-statement-header-header">Exercise</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(T\)</span> be a base type theory,
+and let <span class="morg-generated-katex">\(X\)</span> be a topos
+in <span class="morg-generated-katex">\(T\)</span>.
+We work in <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Glob}}}_{\mathord {\textnormal {\textsf {Sh}}}(X)}(\mathord {\textnormal {\textsf {Sp}}})\)</span>.
+Let <span class="morg-generated-katex">\(i:\mathord {\textnormal {\textsf {Level}}}\)</span>.
+<ul class="morg-generated-unordered-list" style="list-style-type: none;"><li class="morg-generated-list-item"><span class="morg-generated-list-item-head">-</span><span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Type}}}(\mathord {\textnormal {\textsf {succ}}}(i))\)</span> has products and coproducts
+indexed over any
+<span class="morg-generated-katex">\(A:\mathord {\textnormal {\textsf {Type}}}(\mathord {\textnormal {\textsf {succ}}}(i))\)</span>
+in <span class="morg-generated-katex">\(T\)</span>.</li><li class="morg-generated-list-item"><span class="morg-generated-list-item-head">-</span><span class="morg-generated-katex">\(\mathcal {E}(i)\)</span> is closed under coproducts
+indexed over any
+<span class="morg-generated-katex">\(A:\mathord {\textnormal {\textsf {Type}}}(i)\)</span>
+in <span class="morg-generated-katex">\(T\)</span>.</li></ul></p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="002X.html">[002X]</a> <span class="morg-generated-statement-header-header">Notation</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(T\)</span> be a base type theory.
+We work in <span class="morg-generated-katex">\(T\)</span>.
+Let <span class="morg-generated-katex">\(X\)</span> be a topos.
+By <a class="morg-generated-id" href="002W.html">[002W]</a>,
+we have a translation
+<center class="morg-generated-display"><span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Sp}}}\rightarrow \mathord {\textnormal {\textsf {Glob}}}_{\mathord {\textnormal {\textsf {Sh}}}(X)}(\mathord {\textnormal {\textsf {Sp}}})\)</span></center>
+that preserves all the structures of
+the type theory of spaces.
+We refer to this translation as
+<span class="morg-generated-katex">\(Z\mapsto {X}^{*}(Z)\)</span>.</p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="002U.html">[002U]</a> <span class="morg-generated-statement-header-header">Notation</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(T_{1}\)</span> be a type theory
+and let <span class="morg-generated-katex">\(T_{2}\)</span> be a type theory
+internal to <span class="morg-generated-katex">\(T_{1}\)</span>.
+We work in <span class="morg-generated-katex">\(T_{1}\)</span>.
+Let <span class="morg-generated-katex">\(i:\mathord {\textnormal {\textsf {Level}}}\)</span>
+and let <span class="morg-generated-katex">\(A:\mathord {\textnormal {\textsf {D}}}_{T_{2}}({}\vdash \mathord {\textnormal {\textsf {Type}}}(i))\)</span>.
+Then <span class="morg-generated-katex">\(T_{2}/(x:A)\)</span>
+denotes the
+<dfn class="morg-generated-dfn">slice type theory over <span class="morg-generated-katex">\(A\)</span></dfn>.
+More precisely,
+it is described as follows.
+<ul class="morg-generated-unordered-list" style="list-style-type: none;"><li class="morg-generated-list-item"><span class="morg-generated-list-item-head">-</span>Let <span class="morg-generated-katex">\(j:\mathord {\textnormal {\textsf {Level}}}\)</span>.
+Then <span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Ctx}}}_{T_{2}/(x:A)}(j)\)</span>
+is the full subcategory of
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Ctx}}}_{T_{2}}(j)/(x:A)\)</span>
+spanned by the display maps over <span class="morg-generated-katex">\(x:A\)</span>
+of level <span class="morg-generated-katex">\(j\)</span>.</li><li class="morg-generated-list-item"><span class="morg-generated-list-item-head">-</span>The types of types and elements are created by
+the domain projection
+<span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Ctx}}}_{T_{2}/(x:A)}(j)\rightarrow \mathord {\textnormal {\textsf {Ctx}}}_{T_{2}}(\_)\)</span>.</li></ul></p></div></div></article><article class="morg-generated-article"><div class="morg-generated-statement"><header class="morg-generated-statement-header"><a class="morg-generated-id" href="002Y.html">[002Y]</a> <span class="morg-generated-statement-header-header">Axiom</span></header><div class="morg-generated-statement-body"><p class="morg-generated-paragraph">Let <span class="morg-generated-katex">\(T\)</span> be a base type theory.
+We work in <span class="morg-generated-katex">\(T\)</span>.
+Let <span class="morg-generated-katex">\(X\)</span> be a topos.
+<ul class="morg-generated-unordered-list" style="list-style-type: none;"><li class="morg-generated-list-item"><span class="morg-generated-list-item-head">-</span><span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {w}}}_{X}:\mathord {\textnormal {\textsf {D}}}_{\mathord {\textnormal {\textsf {Glob}}}_{\mathord {\textnormal {\textsf {Sh}}}(X)}(\mathord {\textnormal {\textsf {Sp}}})}({}\vdash {X}^{*}(X))\)</span>.</li><li class="morg-generated-list-item"><span class="morg-generated-list-item-head">-</span>The translation
+<center class="morg-generated-display"><span class="morg-generated-katex">\(\mathord {\textnormal {\textsf {Sp}}}/(x:X)\rightarrow \mathord {\textnormal {\textsf {Glob}}}_{\mathord {\textnormal {\textsf {Sh}}}(X)}(\mathord {\textnormal {\textsf {Sp}}})\)</span></center>
+defined by
+<center class="morg-generated-display"><span class="morg-generated-katex">\(Z\mapsto ({X}^{*}(Z))[x\mathrel {:\equiv }\mathord {\textnormal {\textsf {w}}}_{X}]\)</span></center>
+is an equivalence.</li></ul></p></div></div></article></div><nav class="morg-generated-section-toc"><div class="morg-generated-toc"><ul class="morg-generated-toc-node"></ul></div></nav></section></main><nav><ol class="morg-generated-d-pad"><li class="morg-generated-d-pad-previous"><a href="0028.html">←</a></li><li class="morg-generated-d-pad-up"><a href="001T.html">↑</a></li></ol></nav></div></div></div></body></html>

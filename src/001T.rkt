@@ -59,6 +59,9 @@
     into the type theory of spaces in it,
     and its image is the étale types.
     Another axiom asserts that
+    a topos is determined by
+    the category of sheaves on it.
+    Yet another axiom asserts that
     the type theory of spaces
     in the type theory of sheaves on a topos @(math X)
     is equivalent to
